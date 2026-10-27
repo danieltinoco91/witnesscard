@@ -1,12 +1,30 @@
 {
   "hosting": {
     "public": "public",
+    "cleanUrls": true,
+    "trailingSlash": false,
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
     ],
     "rewrites": [
+      {
+        "source": "/politica-de-privacidad",
+        "destination": "/privacy.html"
+      },
+      {
+        "source": "/politica-privacidad",
+        "destination": "/privacy.html"
+      },
+      {
+        "source": "/privacy",
+        "destination": "/privacy.html"
+      },
+      {
+        "source": "/privacy-policy",
+        "destination": "/privacy.html"
+      },
       {
         "source": "**",
         "destination": "/index.html"

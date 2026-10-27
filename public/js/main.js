@@ -65,32 +65,86 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // 4. Mobile Menu Toggle
-  const mobileToggle = document.querySelector('.mobile-toggle');
-  const navMenu = document.querySelector('.nav-menu');
+  // 4. Mobile Menu Toggle & Drawer
+  const mobileToggle = document.getElementById('mobileToggle') || document.querySelector('.mobile-toggle');
+  const navMenu = document.getElementById('navMenu') || document.querySelector('.nav-menu');
+  const navBackdrop = document.getElementById('navBackdrop') || document.querySelector('.nav-backdrop');
+
+  function openMobileMenu() {
+    if (!navMenu) return;
+    navMenu.classList.add('mobile-open');
+    if (mobileToggle) {
+      mobileToggle.classList.add('is-active');
+      mobileToggle.setAttribute('aria-expanded', 'true');
+    }
+    if (navBackdrop) {
+      navBackdrop.classList.add('active');
+    }
+    document.body.classList.add('menu-locked');
+  }
+
+  function closeMobileMenu() {
+    if (!navMenu) return;
+    navMenu.classList.remove('mobile-open');
+    if (mobileToggle) {
+      mobileToggle.classList.remove('is-active');
+      mobileToggle.setAttribute('aria-expanded', 'false');
+    }
+    if (navBackdrop) {
+      navBackdrop.classList.remove('active');
+    }
+    document.body.classList.remove('menu-locked');
+  }
 
   if (mobileToggle && navMenu) {
-    mobileToggle.addEventListener('click', () => {
-      navMenu.classList.toggle('mobile-open');
+    mobileToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = navMenu.classList.contains('mobile-open');
+      if (isOpen) {
+        closeMobileMenu();
+      } else {
+        openMobileMenu();
+      }
     });
+
+    if (navBackdrop) {
+      navBackdrop.addEventListener('click', closeMobileMenu);
+    }
 
     // Close on link click
     navMenu.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
-        navMenu.classList.remove('mobile-open');
+        closeMobileMenu();
       });
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && navMenu.classList.contains('mobile-open')) {
+        closeMobileMenu();
+      }
+    });
+
+    // Close if window resized to desktop
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768 && navMenu.classList.contains('mobile-open')) {
+        closeMobileMenu();
+      }
     });
   }
 
-  // 5. Sticky Privacy TOC Highlighting (for Privacy Page)
+  // 5. Sticky Privacy TOC Highlighting (for Privacy Page: Desktop Sidebar & Mobile Pill Bar)
   const legalSections = document.querySelectorAll('.legal-section-block');
   const legalNavItems = document.querySelectorAll('.legal-nav-item');
+  const legalTocPills = document.querySelectorAll('.toc-pill');
 
-  if (legalSections.length > 0 && legalNavItems.length > 0) {
+  if (legalSections.length > 0 && (legalNavItems.length > 0 || legalTocPills.length > 0)) {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           const id = entry.target.getAttribute('id');
+          
+          // Desktop sidebar items
           legalNavItems.forEach(item => {
             const link = item.querySelector('a');
             if (link && link.getAttribute('href') === `#${id}`) {
@@ -98,10 +152,20 @@ document.addEventListener('DOMContentLoaded', () => {
               item.classList.add('active');
             }
           });
+
+          // Mobile horizontal pills
+          legalTocPills.forEach(pill => {
+            if (pill.getAttribute('href') === `#${id}`) {
+              legalTocPills.forEach(p => p.classList.remove('active'));
+              pill.classList.add('active');
+              // Gently scroll pill into view without jarring page scroll
+              pill.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+            }
+          });
         }
       });
     }, {
-      rootMargin: '-20% 0px -70% 0px'
+      rootMargin: '-15% 0px -65% 0px'
     });
 
     legalSections.forEach(section => observer.observe(section));
