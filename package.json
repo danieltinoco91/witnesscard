@@ -1,0 +1,23 @@
+{
+  "name": "witnesscard-web",
+  "version": "1.0.0",
+  "description": "Sitio web y landing page oficial de WitnessCard - Escáner inteligente de tarjetas de presentación 100% On-Device.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "witnesscard",
+    "business-card-scanner",
+    "ocr",
+    "kotlin",
+    "privacy-first",
+    "landing-page"
+  ],
+  "author": "Beltsasar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

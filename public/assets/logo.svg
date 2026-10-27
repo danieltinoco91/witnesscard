@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <!-- Dark Navy Rounded Background Square -->
+  <path fill="#0B132B" d="M30,0 h140 a30,30 0 0 1 30,30 v140 a30,30 0 0 1 -30,30 h-140 a30,30 0 0 1 -30,-30 v-140 a30,30 0 0 1 30,-30 z" />
+
+  <!-- Card Outer Frame (Crisp Teal Stroke) -->
+  <path stroke="#2DD4BF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none" d="M55,50 H145 A15,15 0 0 1 160,65 V135 A15,15 0 0 1 145,150 H55 A15,15 0 0 1 40,135 V65 A15,15 0 0 1 55,50 Z" />
+
+  <!-- Left Side: Stylized 'W' Geometry (Royal Blue) -->
+  <path stroke="#1E68F6" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none" d="M50,65 L65,135 L85,85 L105,135 L118,65" />
+
+  <!-- Right Side: Stylized 'C' Loop with Camera Lens (Teal) -->
+  <path stroke="#2DD4BF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none" d="M150,75 A30,30 0 1,0 150,125 H125" />
+
+  <!-- Camera Lens / Connection Node Badge -->
+  <circle cx="142" cy="100" r="10" fill="#2DD4BF" />
+  <circle cx="142" cy="100" r="4" fill="#0B132B" />
+  <line x1="152" y1="100" x2="165" y2="100" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" />
+</svg>
