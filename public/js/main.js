@@ -134,47 +134,62 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // 5. Sticky Privacy TOC Highlighting (for Privacy Page: Desktop Sidebar & Mobile Pill Bar)
-  const legalSections = document.querySelectorAll('.legal-section-block');
-  const legalNavItems = document.querySelectorAll('.legal-nav-item');
-  const legalTocPills = document.querySelectorAll('.toc-pill');
+  let legalObserver = null;
+  function initPrivacyTocObserver() {
+    if (legalObserver) {
+      legalObserver.disconnect();
+      legalObserver = null;
+    }
+    const legalSections = document.querySelectorAll('.legal-section-block');
+    const legalNavItems = document.querySelectorAll('.legal-nav-item');
+    const legalTocPills = document.querySelectorAll('.toc-pill');
 
-  if (legalSections.length > 0 && (legalNavItems.length > 0 || legalTocPills.length > 0)) {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const id = entry.target.getAttribute('id');
-          
-          // Desktop sidebar items
-          legalNavItems.forEach(item => {
-            const link = item.querySelector('a');
-            if (link && link.getAttribute('href') === `#${id}`) {
-              legalNavItems.forEach(i => i.classList.remove('active'));
-              item.classList.add('active');
-            }
-          });
-
-          // Mobile horizontal pills
-          legalTocPills.forEach(pill => {
-            if (pill.getAttribute('href') === `#${id}`) {
-              legalTocPills.forEach(p => p.classList.remove('active'));
-              pill.classList.add('active');
-              // Scroll the pill container horizontally without affecting the page scroll
-              const scrollContainer = pill.closest('.legal-mobile-toc-scroll');
-              if (scrollContainer) {
-                const targetLeft = pill.offsetLeft - (scrollContainer.clientWidth / 2) + (pill.clientWidth / 2);
-                scrollContainer.scrollTo({ left: targetLeft, behavior: 'smooth' });
+    if (legalSections.length > 0 && (legalNavItems.length > 0 || legalTocPills.length > 0)) {
+      legalObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const id = entry.target.getAttribute('id');
+            
+            // Desktop sidebar items
+            legalNavItems.forEach(item => {
+              const link = item.querySelector('a');
+              if (link && link.getAttribute('href') === `#${id}`) {
+                legalNavItems.forEach(i => i.classList.remove('active'));
+                item.classList.add('active');
               }
-            }
-          });
+            });
+
+            // Mobile horizontal pills
+            legalTocPills.forEach(pill => {
+              if (pill.getAttribute('href') === `#${id}`) {
+                legalTocPills.forEach(p => p.classList.remove('active'));
+                pill.classList.add('active');
+                // Scroll the pill container horizontally without affecting the page scroll
+                const scrollContainer = pill.closest('.legal-mobile-toc-scroll');
+                if (scrollContainer) {
+                  const targetLeft = pill.offsetLeft - (scrollContainer.clientWidth / 2) + (pill.clientWidth / 2);
+                  scrollContainer.scrollTo({ left: targetLeft, behavior: 'smooth' });
+                }
+              }
+            });
+          }
+        });
+      }, {
+        rootMargin: '-15% 0px -65% 0px'
+      });
+
+      legalSections.forEach(section => {
+        if (section.offsetParent !== null) {
+          legalObserver.observe(section);
         }
       });
-    }, {
-      rootMargin: '-15% 0px -65% 0px'
-    });
-
-    legalSections.forEach(section => observer.observe(section));
+    }
   }
+
+  window.reinitPrivacyTocObserver = initPrivacyTocObserver;
+  initPrivacyTocObserver();
 });
+
 
 // Utility to copy support email with notification
 function copySupportEmail(email = 'support@witnesscard.app') {

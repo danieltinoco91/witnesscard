@@ -8,13 +8,13 @@
   <meta name="description"
     content="WitnessCard is the native Android app built with Kotlin and Jetpack Compose to scan, organize, and share business cards with local OCR and absolute privacy.">
   <meta name="keywords"
-    content="business card scanner, local ocr, android kotlin, vcard qr, privacy-first, google ml kit, contact manager">
+    content="business card scanner, local ocr, android kotlin, vcard qr, privacy-first, contact manager">
   <meta name="author" content="Beltsasar">
 
   <!-- Open Graph -->
   <meta property="og:title" content="WitnessCard — Smart Business Card Scanner">
   <meta property="og:description"
-    content="100% On-Device processing powered by Google ML Kit. Scan, organize into hierarchical folders, and generate your digital card with vCard QR codes without external cloud servers.">
+    content="100% On-Device processing. Scan, organize into hierarchical folders, and generate your digital card with vCard QR codes without external cloud servers.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="/assets/app_icon.webp">
 
@@ -44,34 +44,57 @@
         <a href="/" class="brand-link" aria-label="WitnessCard Home">
           <img src="/assets/logo.svg" alt="WitnessCard Logo" class="brand-logo-img">
           <span class="brand-name">WitnessCard</span>
-          <span class="brand-tag">100% On-Device</span>
+          <span class="brand-tag" data-i18n="nav.brandTag">100% On-Device</span>
         </a>
 
         <ul class="nav-menu" id="navMenu">
-          <li class="nav-item"><a href="#features">Features</a></li>
-          <li class="nav-item"><a href="#digital-card">Digital Card</a></li>
-          <li class="nav-item"><a href="#privacy">Privacy</a></li>
-          <li class="nav-item"><a href="#pricing">Pricing</a></li>
-          <li class="nav-item"><a href="#faq">FAQ</a></li>
-          <li class="nav-item"><a href="/privacy">Legal</a></li>
+          <li class="nav-item"><a href="#features" data-i18n="nav.features">Features</a></li>
+          <li class="nav-item"><a href="#digital-card" data-i18n="nav.digitalCard">Digital Card</a></li>
+          <li class="nav-item"><a href="#privacy" data-i18n="nav.privacy">Privacy</a></li>
+          <li class="nav-item"><a href="#pricing" data-i18n="nav.pricing">Pricing</a></li>
+          <li class="nav-item"><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
+          <li class="nav-item"><a href="/privacy" data-i18n="nav.legal">Legal</a></li>
+                    <li class="nav-mobile-lang">
+            <div class="lang-switcher" role="group" aria-label="Language selector">
+              <svg class="lang-globe-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+              <button type="button" class="lang-btn active" data-lang-choice="en" aria-label="English">EN</button>
+              <span class="lang-divider">/</span>
+              <button type="button" class="lang-btn" data-lang-choice="es" aria-label="Español">ES</button>
+            </div>
+          </li>
           <li class="nav-mobile-cta">
             <a href="#pricing" class="btn btn-primary btn-mobile-cta">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                 stroke-linecap="round" stroke-linejoin="round">
                 <path d="M3 15v4c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2v-4M17 9l-5 5-5-5M12 12.8V2.5" />
               </svg>
-              <span>Get WitnessCard App</span>
+              <span data-i18n="nav.getAppMobile">Get WitnessCard App</span>
             </a>
           </li>
         </ul>
 
         <div class="nav-actions">
+                    <!-- Language Switcher (Desktop) -->
+          <div class="lang-switcher" role="group" aria-label="Language selector">
+            <svg class="lang-globe-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+            <button type="button" class="lang-btn active" data-lang-choice="en" aria-label="English">EN</button>
+            <span class="lang-divider">/</span>
+            <button type="button" class="lang-btn" data-lang-choice="es" aria-label="Español">ES</button>
+          </div>
           <a href="#pricing" class="btn btn-primary" id="btn-nav-download">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
               stroke-linecap="round" stroke-linejoin="round">
               <path d="M3 15v4c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2v-4M17 9l-5 5-5-5M12 12.8V2.5" />
             </svg>
-            <span>Get App</span>
+            <span data-i18n="nav.getApp">Get App</span>
           </a>
           <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
             <span class="hamburger-bar"></span>
@@ -98,15 +121,15 @@
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
               </svg>
-              <span>Absolute Privacy • 100% On-Device</span>
+              <span data-i18n="hero.badge">Absolute Privacy • 100% On-Device</span>
             </div>
 
             <h1 class="hero-title">
-              The business card scanner that <span class="highlight">never sends your data</span> to the cloud.
+              <span data-i18n="hero.title">The business card scanner that <span class="highlight">never sends your data</span> to the cloud.</span>
             </h1>
 
             <p class="hero-desc">
-              Transform physical business cards into neatly organized digital contacts in seconds. Engineered in Kotlin with Jetpack Compose, powered by Google ML Kit and local neural models. No remote servers. No forced subscriptions.
+              <span data-i18n="hero.desc">Transform physical business cards into neatly organized digital contacts in seconds. No remote servers. No forced subscriptions.</span>
             </p>
 
             <div class="hero-actions">
@@ -115,11 +138,11 @@
                   <path
                     d="M3.609 1.814L13.792 12 3.61 22.186a1.5 1.5 0 0 1-.61-.956V2.77c0-.38.22-.72.609-.956zM15.207 13.414l2.586 2.586-10.74 6.2c-.417.24-.87.16-1.14-.11l9.294-8.676zM15.207 10.586L5.913 1.91c.27-.27.723-.35 1.14-.11l10.74 6.2-2.586 2.586zM16.621 12l3.35 1.934c.82.473.82 1.66 0 2.132L16.62 12z" />
                 </svg>
-                <span>Download on Google Play</span>
+                <span data-i18n="hero.ctaPlay">Download on Google Play</span>
               </a>
 
               <a href="#features" class="btn btn-secondary btn-lg">
-                <span>See How It Works</span>
+                <span data-i18n="hero.ctaExplore">See How It Works</span>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>
@@ -131,19 +154,19 @@
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                   <polyline points="20 6 9 17 4 12"></polyline>
                 </svg>
-                <span>Google ML Kit OCR</span>
+                <span data-i18n="hero.trust1">OCR</span>
               </div>
               <div class="trust-item">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                   <polyline points="20 6 9 17 4 12"></polyline>
                 </svg>
-                <span>10 Free Scans</span>
+                <span data-i18n="hero.trust2">10 Free Scans</span>
               </div>
               <div class="trust-item">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                   <polyline points="20 6 9 17 4 12"></polyline>
                 </svg>
-                <span>Lifetime $39 MXN (~$2 USD)</span>
+                <span data-i18n="hero.trust3">Lifetime $39 MXN (~$2 USD)</span>
               </div>
             </div>
           </div>
@@ -153,13 +176,13 @@
             <!-- Simulator Switcher Tabs -->
             <div class="interactive-tabs" role="tablist">
               <button class="tab-btn active" data-tab="scanner" role="tab" aria-selected="true">
-                1. OCR Scanner
+                <span data-i18n="sim.tabScanner">1. OCR Scanner</span>
               </button>
               <button class="tab-btn" data-tab="folders" role="tab" aria-selected="false">
-                2. Folders
+                <span data-i18n="sim.tabFolders">2. Folders</span>
               </button>
               <button class="tab-btn" data-tab="mycard" role="tab" aria-selected="false">
-                3. QR Card
+                <span data-i18n="sim.tabCard">3. QR Card</span>
               </button>
             </div>
 
@@ -188,35 +211,35 @@
                   <div class="scanner-viewfinder">
                     <div class="scan-beam"></div>
                     <div class="scan-card-target">
-                      <div style="font-size: 0.7rem; font-weight: 700; color: #FFFFFF;">DR. ALEXANDER VANCE</div>
-                      <div style="font-size: 0.58rem; color: #94A3B8;">Clinical Cardiologist &amp; Researcher</div>
-                      <div style="font-size: 0.55rem; color: #2DD4BF; margin-top: 4px;">Metropolitan Health Center</div>
-                      <div style="font-size: 0.52rem; color: #64748B;">alexander@cardiohealth.org • +1 415 555 0192</div>
+                      <div style="font-size: 0.7rem; font-weight: 700; color: #FFFFFF;"><span data-i18n="sim.targetName">DR. ALEXANDER VANCE</span></div>
+                      <div style="font-size: 0.58rem; color: #94A3B8;"><span data-i18n="sim.targetRole">Clinical Cardiologist &amp; Researcher</span></div>
+                      <div style="font-size: 0.55rem; color: #2DD4BF; margin-top: 4px;"><span data-i18n="sim.targetCompany">Metropolitan Health Center</span></div>
+                      <div style="font-size: 0.52rem; color: #64748B;"><span data-i18n="sim.targetContact">alexander@cardiohealth.org • +1 415 555 0192</span></div>
                     </div>
                   </div>
 
                   <div class="detected-fields">
                     <div style="font-size: 0.72rem; font-weight: 700; color: #0F172A; margin-bottom: 2px;">
-                      Fields Extracted by Local AI:
+                      <span data-i18n="sim.extractedLabel">Fields Extracted by Local AI:</span>
                     </div>
                     <div class="extracted-item">
-                      <span class="label">Contact:</span>
-                      <span class="val">Dr. Alexander Vance</span>
+                      <span class="label" data-i18n="sim.lblContact">Contact:</span>
+                      <span class="val" data-i18n="sim.valContact">Dr. Alexander Vance</span>
                       <span class="badge-verified">✓ 100%</span>
                     </div>
                     <div class="extracted-item">
-                      <span class="label">Role:</span>
-                      <span class="val">Clinical Cardiologist</span>
+                      <span class="label" data-i18n="sim.lblRole">Role:</span>
+                      <span class="val" data-i18n="sim.valRole">Clinical Cardiologist</span>
                       <span class="badge-verified">✓ OCR</span>
                     </div>
                     <div class="extracted-item">
-                      <span class="label">Phone:</span>
-                      <span class="val">+1 415 555 0192</span>
+                      <span class="label" data-i18n="sim.lblPhone">Phone:</span>
+                      <span class="val" data-i18n="sim.valPhone">+1 415 555 0192</span>
                       <span class="badge-verified">✓ Direct</span>
                     </div>
                     <div class="extracted-item">
-                      <span class="label">Folder:</span>
-                      <span class="val" style="color: #1E68F6;">📁 Medical &amp; Health</span>
+                      <span class="label" data-i18n="sim.lblFolder">Folder:</span>
+                      <span class="val" style="color: #1E68F6;" data-i18n="sim.valFolder">📁 Medical &amp; Health</span>
                       <span class="badge-verified">✓ Saved</span>
                     </div>
                   </div>
@@ -225,56 +248,56 @@
                 <!-- Panel 2: Hierarchical Folders & Global Search -->
                 <div class="screen-panel" id="panel-folders">
                   <div class="breadcrumbs-bar">
-                    <span>Home</span>
+                    <span data-i18n="sim.bcHome">Home</span>
                     <span>›</span>
-                    <span style="color: #1E68F6;">VIP Clients</span>
+                    <span style="color: #1E68F6;" data-i18n="sim.bcVip">VIP Clients</span>
                     <span>›</span>
-                    <span>West Coast</span>
+                    <span data-i18n="sim.bcWest">West Coast</span>
                   </div>
 
                   <div class="folder-grid-sim">
                     <div class="sim-folder-chip">
                       <span>📁</span>
                       <div>
-                        <div>Tech &amp; AI</div>
-                        <span style="font-size: 0.6rem; color: #94A3B8;">14 cards</span>
+                        <div data-i18n="sim.fldTech">Tech &amp; AI</div>
+                        <span style="font-size: 0.6rem; color: #94A3B8;" data-i18n="sim.fldTechCount">14 cards</span>
                       </div>
                     </div>
                     <div class="sim-folder-chip">
                       <span>📁</span>
                       <div>
-                        <div>Suppliers</div>
-                        <span style="font-size: 0.6rem; color: #94A3B8;">8 cards</span>
+                        <div data-i18n="sim.fldSuppliers">Suppliers</div>
+                        <span style="font-size: 0.6rem; color: #94A3B8;" data-i18n="sim.fldSuppliersCount">8 cards</span>
                       </div>
                     </div>
                   </div>
 
                   <div style="font-size: 0.72rem; font-weight: 700; color: #0F172A; margin: 6px 0 4px;">
-                    Cards in this folder:
+                    <span data-i18n="sim.cardsInFolder">Cards in this folder:</span>
                   </div>
 
                   <div class="sim-card-row">
                     <div class="sim-card-info">
-                      <h4>Sophia Valenzuela</h4>
-                      <p>Chief Operations Officer • InnovaTech</p>
+                      <h4 data-i18n="sim.c1Name">Sophia Valenzuela</h4>
+                      <p data-i18n="sim.c1Role">Chief Operations Officer • InnovaTech</p>
                     </div>
-                    <span class="sim-folder-tag">📁 West Coast</span>
+                    <span class="sim-folder-tag" data-i18n="sim.cTag">📁 West Coast</span>
                   </div>
 
                   <div class="sim-card-row">
                     <div class="sim-card-info">
-                      <h4>Robert Sterling, P.E.</h4>
-                      <p>Managing Partner • Nexus Solutions</p>
+                      <h4 data-i18n="sim.c2Name">Robert Sterling, P.E.</h4>
+                      <p data-i18n="sim.c2Role">Managing Partner • Nexus Solutions</p>
                     </div>
-                    <span class="sim-folder-tag">📁 West Coast</span>
+                    <span class="sim-folder-tag" data-i18n="sim.cTag">📁 West Coast</span>
                   </div>
 
                   <div class="sim-card-row">
                     <div class="sim-card-info">
-                      <h4>Mariana Torres, CFA</h4>
-                      <p>Financial Consultant • Capital Partners</p>
+                      <h4 data-i18n="sim.c3Name">Mariana Torres, CFA</h4>
+                      <p data-i18n="sim.c3Role">Financial Consultant • Capital Partners</p>
                     </div>
-                    <span class="sim-folder-tag">📁 West Coast</span>
+                    <span class="sim-folder-tag" data-i18n="sim.cTag">📁 West Coast</span>
                   </div>
                 </div>
 
@@ -284,7 +307,7 @@
                     <div class="card-preview-header">
                       <div class="card-name-title">
                         <h3>Beltsasar</h3>
-                        <p>Software Engineer</p>
+                        <p data-i18n="sim.myRole">Software Engineer</p>
                         <p style="font-size: 0.66rem; opacity: 0.8;">WitnessCard</p>
                       </div>
                       <div
@@ -316,13 +339,13 @@
                     </div>
 
                     <div style="font-size: 0.65rem; text-align: center; opacity: 0.9;">
-                      Offline vCard Code • Scan with any smartphone
+                      <span data-i18n="sim.qrSubtext">Offline vCard Code • Scan with any smartphone</span>
                     </div>
                   </div>
 
                   <div style="margin-top: 8px; text-align: center;">
                     <div style="font-size: 0.68rem; font-weight: 600; color: #64748B; margin-bottom: 4px;">
-                      Try Visual Themes:
+                      <span data-i18n="sim.tryThemes">Try Visual Themes:</span>
                     </div>
                     <div class="theme-selector-chips">
                       <span class="theme-dot dot-navy" data-theme="navy" title="Dark Navy"></span>
@@ -363,8 +386,8 @@
                 <line x1="1" y1="14" x2="4" y2="14" />
               </svg>
             </div>
-            <h4>100% On-Device Processing</h4>
-            <p>OCR text extraction and semantic structuring run locally on your phone's processor using Google ML Kit.</p>
+            <h4 data-i18n="trust.p1Title">100% On-Device Processing</h4>
+            <p data-i18n="trust.p1Desc">OCR text extraction and semantic structuring run locally on your phone's processor.</p>
           </div>
 
           <div class="trust-pillar">
@@ -376,8 +399,8 @@
                 <line x1="12" y1="22.08" x2="12" y2="12" />
               </svg>
             </div>
-            <h4>Zero Cloud Servers</h4>
-            <p>We do not operate remote databases. Not a single byte of your contact information ever leaves your device.</p>
+            <h4 data-i18n="trust.p2Title">Zero Cloud Servers</h4>
+            <p data-i18n="trust.p2Desc">We do not operate remote databases. Not a single byte of your contact information ever leaves your device.</p>
           </div>
 
           <div class="trust-pillar">
@@ -387,8 +410,8 @@
                 <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
               </svg>
             </div>
-            <h4>No Accounts or Trackers</h4>
-            <p>No registration, sign-in, or email required to begin scanning. Just open the app and get straight to business.</p>
+            <h4 data-i18n="trust.p3Title">No Accounts or Trackers</h4>
+            <p data-i18n="trust.p3Desc">No registration, sign-in, or email required to begin scanning. Just open the app and get straight to business.</p>
           </div>
 
           <div class="trust-pillar">
@@ -403,8 +426,8 @@
                 <line x1="10" y1="16" x2="14" y2="16" />
               </svg>
             </div>
-            <h4>Direct Google Play Billing</h4>
-            <p>In-app upgrades are processed end-to-end by Google Play. We never handle or store your financial details.</p>
+            <h4 data-i18n="trust.p4Title">Direct Google Play Billing</h4>
+            <p data-i18n="trust.p4Desc">In-app upgrades are processed end-to-end by Google Play. We never handle or store your financial details.</p>
           </div>
 
         </div>
@@ -419,9 +442,9 @@
       <div class="container">
 
         <div class="section-header">
-          <span class="section-tag">Executive Capabilities</span>
-          <h2 class="section-title">Built for maximum productivity and executive privacy</h2>
-          <p class="section-subtitle">
+          <span class="section-tag" data-i18n="features.tag">Executive Capabilities</span>
+          <h2 class="section-title" data-i18n="features.title">Built for maximum productivity and executive privacy</h2>
+          <p class="section-subtitle" data-i18n="features.subtitle">
             Every feature in WitnessCard was designed specifically for networking conferences, executive meetings, and effortless contact management.
           </p>
         </div>
@@ -436,9 +459,9 @@
                 <circle cx="12" cy="13" r="4" />
               </svg>
             </div>
-            <h3>Intelligent OCR Scanning</h3>
-            <p>Automatic edge detection, perspective correction, and shadow removal powered by the official Google ML Kit Document Scanner engine.</p>
-            <span class="feature-tag">100% Offline</span>
+            <h3 data-i18n="feat1.title">Intelligent OCR Scanning</h3>
+            <p data-i18n="feat1.desc">Automatic edge detection, perspective correction, and shadow removal with local OCR.</p>
+            <span class="feature-tag" data-i18n="feat1.tag">100% Offline</span>
           </div>
 
           <!-- Feature 2 -->
@@ -448,9 +471,9 @@
                 <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" />
               </svg>
             </div>
-            <h3>Folders &amp; Subfolders</h3>
-            <p>Organize contacts cleanly by company, industry, or event with hierarchical nested folders and intuitive breadcrumb navigation.</p>
-            <span class="feature-tag">Total Organization</span>
+            <h3 data-i18n="feat2.title">Folders &amp; Subfolders</h3>
+            <p data-i18n="feat2.desc">Organize contacts cleanly by company, industry, or event with hierarchical nested folders and intuitive breadcrumb navigation.</p>
+            <span class="feature-tag" data-i18n="feat2.tag">Total Organization</span>
           </div>
 
           <!-- Feature 3 -->
@@ -463,9 +486,9 @@
                 <rect x="3" y="14" width="7" height="7" />
               </svg>
             </div>
-            <h3>Digital Card with vCard QR</h3>
-            <p>Build your professional card with photo, company, title, and logo. Generates a standard vCard QR code readable by any iPhone or Android without extra apps.</p>
-            <span class="feature-tag">Instant Exchange</span>
+            <h3 data-i18n="feat4.title">Digital Card with vCard QR</h3>
+            <p data-i18n="feat4.desc">Build your professional card with photo, company, title, and logo. Generates a standard vCard QR code readable by any iPhone or Android without extra apps.</p>
+            <span class="feature-tag" data-i18n="feat4.tag">Instant Exchange</span>
           </div>
 
           <!-- Feature 4 -->
@@ -476,9 +499,9 @@
                 <line x1="21" y1="21" x2="16.65" y2="16.65" />
               </svg>
             </div>
-            <h3>Ultra-Fast Global Search</h3>
-            <p>Find any connection in milliseconds by searching names, companies, or job titles, complete with visual badges showing which folder they belong to.</p>
-            <span class="feature-tag">List &amp; Grid Views</span>
+            <h3 data-i18n="feat3.title">Ultra-Fast Global Search</h3>
+            <p data-i18n="feat3.desc">Find any connection in milliseconds by searching names, companies, or job titles, complete with visual badges showing which folder they belong to.</p>
+            <span class="feature-tag" data-i18n="feat3.tag">List &amp; Grid Views</span>
           </div>
 
           <!-- Feature 5 -->
@@ -490,9 +513,9 @@
                 <polyline points="17 11 19 13 23 9" />
               </svg>
             </div>
-            <h3>Export to Device Contacts</h3>
-            <p>Export scanned cards directly into Android's native address book or Google Contacts with a single tap, or export universal .vcf contact files.</p>
-            <span class="feature-tag">Optional Sync</span>
+            <h3 data-i18n="feat5.title">Export to Device Contacts</h3>
+            <p data-i18n="feat5.desc">Export scanned cards directly into Android's native address book or Google Contacts with a single tap, or export universal .vcf contact files.</p>
+            <span class="feature-tag" data-i18n="feat5.tag">Optional Sync</span>
           </div>
 
           <!-- Feature 6 -->
@@ -504,9 +527,9 @@
                 <line x1="12" y1="15" x2="12" y2="3" />
               </svg>
             </div>
-            <h3>Local Backups &amp; Portability</h3>
-            <p>Export and import complete .zip backups using Android's secure Storage Access Framework. Switch phones without losing a single contact.</p>
-            <span class="feature-tag">Sovereign Control</span>
+            <h3 data-i18n="feat6.title">Local Backups &amp; Portability</h3>
+            <p data-i18n="feat6.desc">Export and import complete .zip backups using Android's secure Storage Access Framework. Switch phones without losing a single contact.</p>
+            <span class="feature-tag" data-i18n="feat6.tag">Sovereign Control</span>
           </div>
 
         </div>
@@ -515,9 +538,9 @@
         <div class="feature-split-row" id="digital-card" style="position: relative;">
           <div id="tarjeta-digital" style="position: absolute; top: 0;"></div>
           <div class="split-content">
-            <span class="section-tag" style="margin-bottom: 12px;">Your Digital Signature</span>
-            <h3>Your interactive digital business card with vCard QR</h3>
-            <p>
+            <span class="section-tag" style="margin-bottom: 12px;" data-i18n="dcard.tag">Your Digital Signature</span>
+            <h3 data-i18n="dcard.title">Your interactive digital business card with vCard QR</h3>
+            <p data-i18n="dcard.desc">
               Never run out of paper business cards at an event again. WitnessCard lets you craft your personalized executive card complete with your photo, corporate logo, and one-tap contact details.
             </p>
             <ul class="split-checklist">
@@ -525,19 +548,19 @@
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span><strong>Universal compatibility:</strong> Anyone can scan your QR code with their native iPhone or Android camera to instantly save your contact card.</span>
+                <span data-i18n="dcard.item1"><strong>Universal compatibility:</strong> Anyone can scan your QR code with their native iPhone or Android camera to instantly save your contact card.</span>
               </li>
               <li>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span><strong>6 elegant visual themes:</strong> Dark Navy, Classic Light, Midnight Cyan, Royal Blue, Charcoal Black, and Emerald.</span>
+                <span data-i18n="dcard.item2"><strong>6 elegant visual themes:</strong> Dark Navy, Classic Light, Midnight Cyan, Royal Blue, Charcoal Black, and Emerald.</span>
               </li>
               <li>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span><strong>Save image to gallery:</strong> Export a high-resolution branded QR code image to your photo library for easy sharing via WhatsApp or social media.</span>
+                <span data-i18n="dcard.item3"><strong>Save image to gallery:</strong> Export a high-resolution branded QR code image to your photo library for easy sharing via WhatsApp or social media.</span>
               </li>
             </ul>
           </div>
@@ -548,7 +571,7 @@
               <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px;">
                 <div>
                   <div style="font-size: 1.15rem; font-weight: 800;">Beltsasar</div>
-                  <div style="font-size: 0.82rem; color: #2DD4BF;">Software Engineer • Kotlin &amp; Android</div>
+                  <div style="font-size: 0.82rem; color: #2DD4BF;" data-i18n="dcard.devRole">Software Engineer • Kotlin &amp; Android</div>
                 </div>
                 <div
                   style="width: 44px; height: 44px; border-radius: 8px; background: rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; font-weight: 800;">
@@ -574,15 +597,15 @@
                   </svg>
                 </div>
                 <div style="font-size: 0.8rem; line-height: 1.45;">
-                  <div style="color: #F8FAFC; font-weight: 600;">Standard vCard 3.0</div>
-                  <div style="color: #94A3B8; font-size: 0.74rem;">Scanning automatically opens the native contact card on iOS and Android. Zero web intermediaries.</div>
+                  <div style="color: #F8FAFC; font-weight: 600;" data-i18n="dcard.mockTitle">Standard vCard 3.0</div>
+                  <div style="color: #94A3B8; font-size: 0.74rem;" data-i18n="dcard.mockDesc">Scanning automatically opens the native contact card on iOS and Android. Zero web intermediaries.</div>
                 </div>
               </div>
 
               <div
                 style="display: flex; justify-content: space-between; font-size: 0.76rem; color: #94A3B8; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 12px;">
-                <span>📍 Guanajuato, Mexico</span>
-                <span style="color: #2DD4BF;">✓ Verified On-Device</span>
+                <span data-i18n="dcard.mockType">📱 Digital Business Card</span>
+                <span style="color: #2DD4BF;" data-i18n="dcard.mockVerified">✓ Verified On-Device</span>
               </div>
             </div>
           </div>
@@ -599,9 +622,9 @@
       <div class="container">
 
         <div class="section-header">
-          <span class="section-tag">Transparent Pricing</span>
-          <h2 class="section-title">Choose how you want to use WitnessCard</h2>
-          <p class="section-subtitle">
+          <span class="section-tag" data-i18n="pricing.tag">Transparent Pricing</span>
+          <h2 class="section-title" data-i18n="pricing.title">Choose how you want to use WitnessCard</h2>
+          <p class="section-subtitle" data-i18n="pricing.subtitle">
             No greedy monthly subscriptions. Try it free, and unlock unlimited lifetime access for the price of a cup of coffee.
           </p>
         </div>
@@ -610,8 +633,8 @@
 
           <!-- Plan Free -->
           <div class="pricing-card">
-            <h3 class="pricing-tier-name">Free Edition</h3>
-            <p class="pricing-desc">
+            <h3 class="pricing-tier-name" data-i18n="price.freeTitle">Free Edition</h3>
+            <p class="pricing-desc" data-i18n="price.freeDesc">
               Ideal for experiencing the speed and precision of our on-device OCR engine on your first business cards.
             </p>
 
@@ -621,8 +644,8 @@
                 <span class="price-amount">0</span>
                 <span class="price-currency">USD</span>
               </div>
-              <div class="price-usd-approx">100% Free</div>
-              <div class="price-cadence" style="color: #64748B;">Forever</div>
+              <div class="price-usd-approx" data-i18n="price.freeApprox">100% Free</div>
+              <div class="price-cadence" style="color: #64748B;" data-i18n="price.freeCadence">Forever</div>
             </div>
 
             <ul class="pricing-features-list">
@@ -630,64 +653,64 @@
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span><strong>10 full card scans</strong> included</span>
+                <span data-i18n="price.freeItem1"><strong>10 full card scans</strong> included</span>
               </li>
               <li class="pricing-feature-item">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span>100% On-Device OCR processing</span>
+                <span data-i18n="price.freeItem2">100% On-Device OCR processing</span>
               </li>
               <li class="pricing-feature-item">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span>Organize in main folders</span>
+                <span data-i18n="price.freeItem3">Organize in main folders</span>
               </li>
               <li class="pricing-feature-item">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span>Instant search and list/grid views</span>
+                <span data-i18n="price.freeItem4">Instant search and list/grid views</span>
               </li>
               <li class="pricing-feature-item muted">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <line x1="18" y1="6" x2="6" y2="18" />
                   <line x1="6" y1="6" x2="18" y2="18" />
                 </svg>
-                <span>Unlimited scans (capped at 10)</span>
+                <span data-i18n="price.freeItem5">Unlimited scans (capped at 10)</span>
               </li>
               <li class="pricing-feature-item muted">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <line x1="18" y1="6" x2="6" y2="18" />
                   <line x1="6" y1="6" x2="18" y2="18" />
                 </svg>
-                <span>Custom Digital Card with vCard QR</span>
+                <span data-i18n="price.freeItem6">Custom Digital Card with vCard QR</span>
               </li>
               <li class="pricing-feature-item muted">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <line x1="18" y1="6" x2="6" y2="18" />
                   <line x1="6" y1="6" x2="18" y2="18" />
                 </svg>
-                <span>Bulk export to Google Contacts (.vcf)</span>
+                <span data-i18n="price.freeItem7">Bulk export to Google Contacts (.vcf)</span>
               </li>
             </ul>
 
             <a href="#pricing" class="btn btn-secondary btn-lg" id="btn-pricing-free">
-              <span>Install Free Edition</span>
+              <span data-i18n="price.freeCta">Install Free Edition</span>
             </a>
 
             <div class="pricing-guarantee">
-              <span>No intrusive ads • No account required</span>
+              <span data-i18n="price.freeNote">No intrusive ads • No account required</span>
             </div>
           </div>
 
           <!-- Plan Premium Lifetime -->
           <div class="pricing-card featured">
-            <div class="pricing-badge-popular">Lifetime One-Time Purchase</div>
+            <div class="pricing-badge-popular" data-i18n="price.proBadge">Lifetime One-Time Purchase</div>
 
-            <h3 class="pricing-tier-name">Premium Lifetime License</h3>
-            <p class="pricing-desc">
+            <h3 class="pricing-tier-name" data-i18n="price.proTitle">Premium Lifetime License</h3>
+            <p class="pricing-desc" data-i18n="price.proDesc">
               Complete, unrestricted access for executives and professionals. A single investment for life.
             </p>
 
@@ -697,8 +720,8 @@
                 <span class="price-amount">39</span>
                 <span class="price-currency">MXN</span>
               </div>
-              <div class="price-usd-approx">Approximately <strong>~$2 USD</strong></div>
-              <div class="price-cadence">⚡ One-time payment • No monthly fees</div>
+              <div class="price-usd-approx" data-i18n="price.proApprox">Approximately <strong>~$2 USD</strong></div>
+              <div class="price-cadence" data-i18n="price.proCadence">⚡ One-time payment • No monthly fees</div>
             </div>
 
             <ul class="pricing-features-list">
@@ -706,43 +729,43 @@
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span><strong>Unlimited scans</strong> forever</span>
+                <span data-i18n="price.proItem1"><strong>Unlimited scans</strong> forever</span>
               </li>
               <li class="pricing-feature-item">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span><strong>Custom Digital Business Card</strong> with vCard QR code</span>
+                <span data-i18n="price.proItem2"><strong>Custom Digital Business Card</strong> with vCard QR code</span>
               </li>
               <li class="pricing-feature-item">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span><strong>6 visual themes</strong> and corporate logo support</span>
+                <span data-i18n="price.proItem3"><strong>6 visual themes</strong> and corporate logo support</span>
               </li>
               <li class="pricing-feature-item">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span><strong>Unlimited nested folders</strong> with breadcrumbs</span>
+                <span data-i18n="price.proItem4"><strong>Unlimited nested folders</strong> with breadcrumbs</span>
               </li>
               <li class="pricing-feature-item">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span>Direct export to Google Contacts / Address Book (.vcf)</span>
+                <span data-i18n="price.proItem5">Direct export to Google Contacts / Address Book (.vcf)</span>
               </li>
               <li class="pricing-feature-item">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span>Full offline backups in .zip format</span>
+                <span data-i18n="price.proItem6">Full offline backups in .zip format</span>
               </li>
               <li class="pricing-feature-item">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span>All future updates and improvements included</span>
+                <span data-i18n="price.proItem7">All future updates and improvements included</span>
               </li>
             </ul>
 
@@ -751,14 +774,14 @@
                 <path
                   d="M3.609 1.814L13.792 12 3.61 22.186a1.5 1.5 0 0 1-.61-.956V2.77c0-.38.22-.72.609-.956zM15.207 13.414l2.586 2.586-10.74 6.2c-.417.24-.87.16-1.14-.11l9.294-8.676zM15.207 10.586L5.913 1.91c.27-.27.723-.35 1.14-.11l10.74 6.2-2.586 2.586zM16.621 12l3.35 1.934c.82.473.82 1.66 0 2.132L16.62 12z" />
               </svg>
-              <span>Buy on Google Play ($39 MXN / ~$2 USD)</span>
+              <span data-i18n="price.proCta">Buy on Google Play ($39 MXN / ~$2 USD)</span>
             </a>
 
             <div class="pricing-guarantee">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
               </svg>
-              <span>Processed by Google Play Billing • Official purchase protection</span>
+              <span data-i18n="price.proNote">Processed by Google Play Billing • Official purchase protection</span>
             </div>
           </div>
 
@@ -776,11 +799,11 @@
         <div class="privacy-spotlight-content">
 
           <div class="privacy-spotlight-text">
-            <span class="section-tag" style="background: rgba(45,212,191,0.15); color: #2DD4BF; margin-bottom: 14px;">
+            <span class="section-tag" style="background: rgba(45,212,191,0.15); color: #2DD4BF; margin-bottom: 14px;" data-i18n="privacy.spotlightBadge">
               Uncompromising Architectural Commitment
             </span>
-            <h2>Real Privacy, Backed by Architecture</h2>
-            <p>
+            <h2 data-i18n="privacy.title">Real Privacy, Backed by Architecture</h2>
+            <p data-i18n="privacy.desc">
               Most card scanner apps upload your clients' business cards to cloud servers to train external AI models or build marketing databases. In WitnessCard, we have zero cloud servers because we believe your business relationships belong strictly to you.
             </p>
 
@@ -788,29 +811,29 @@
               <div class="privacy-point">
                 <div class="privacy-point-icon">✓</div>
                 <div>
-                  <h4>Zero Contact Telemetry</h4>
-                  <p>No phone number, email address, or extracted name is ever transmitted beyond your phone.</p>
+                  <h4 data-i18n="privacy.p1Title">Zero Contact Telemetry</h4>
+                  <p data-i18n="privacy.p1Desc">No phone number, email address, or extracted name is ever transmitted beyond your phone.</p>
                 </div>
               </div>
               <div class="privacy-point">
                 <div class="privacy-point-icon">✓</div>
                 <div>
-                  <h4>Local SQLite Database</h4>
-                  <p>Your business cards reside entirely within the app's sandboxed, encrypted storage.</p>
+                  <h4 data-i18n="privacy.p2Title">Local SQLite Database</h4>
+                  <p data-i18n="privacy.p2Desc">Your business cards reside entirely within the app's sandboxed, encrypted storage.</p>
                 </div>
               </div>
               <div class="privacy-point">
                 <div class="privacy-point-icon">✓</div>
                 <div>
-                  <h4>Contacts Permission Strictly Optional</h4>
-                  <p>Only requested when you actively choose to export a card to Android's native address book.</p>
+                  <h4 data-i18n="privacy.p3Title">Contacts Permission Strictly Optional</h4>
+                  <p data-i18n="privacy.p3Desc">Only requested when you actively choose to export a card to Android's native address book.</p>
                 </div>
               </div>
             </div>
 
             <a href="/privacy" class="btn btn-secondary"
               style="background-color: #0F172A; border-color: #334155; color: #FFFFFF;">
-              <span>Read the Full Privacy Policy (October 27, 2026)</span>
+              <span data-i18n="privacy.readPolicyBtn">Read the Full Privacy Policy (October 27, 2026)</span>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M5 12h14M12 5l7 7-7 7" />
               </svg>
@@ -820,33 +843,33 @@
           <!-- Privacy Manifesto Card -->
           <div class="privacy-manifesto-box">
             <div class="manifesto-header">
-              <span style="font-weight: 700; color: #FFFFFF; font-size: 0.92rem;">Data Flow Architecture Audit</span>
+              <span style="font-weight: 700; color: #FFFFFF; font-size: 0.92rem;" data-i18n="audit.title">Data Flow Architecture Audit</span>
               <span class="manifesto-badge">LOCAL-ONLY</span>
             </div>
 
             <div class="manifesto-item">
-              <span class="label">OCR &amp; text recognition</span>
-              <span class="state-green">✓ Local on NPU chip</span>
+              <span class="label" data-i18n="audit.row1Lbl">OCR &amp; text recognition</span>
+              <span class="state-green" data-i18n="audit.row1Val">✓ Local on NPU chip</span>
             </div>
             <div class="manifesto-item">
-              <span class="label">Photo &amp; image storage</span>
-              <span class="state-green">✓ App internal sandbox</span>
+              <span class="label" data-i18n="audit.row2Lbl">Photo &amp; image storage</span>
+              <span class="state-green" data-i18n="audit.row2Val">✓ App internal sandbox</span>
             </div>
             <div class="manifesto-item">
-              <span class="label">vCard QR code generation</span>
-              <span class="state-green">✓ 100% offline</span>
+              <span class="label" data-i18n="audit.row3Lbl">vCard QR code generation</span>
+              <span class="state-green" data-i18n="audit.row3Val">✓ 100% offline</span>
             </div>
             <div class="manifesto-item">
-              <span class="label">Transmission to cloud servers</span>
-              <span class="state-red">✗ 0 KB transmitted</span>
+              <span class="label" data-i18n="audit.row4Lbl">Transmission to cloud servers</span>
+              <span class="state-red" data-i18n="audit.row4Val">✗ 0 KB transmitted</span>
             </div>
             <div class="manifesto-item">
-              <span class="label">Advertising trackers</span>
-              <span class="state-red">✗ 0 trackers</span>
+              <span class="label" data-i18n="audit.row5Lbl">Advertising trackers</span>
+              <span class="state-red" data-i18n="audit.row5Val">✗ 0 trackers</span>
             </div>
             <div class="manifesto-item" style="border-bottom: none;">
-              <span class="label">Selling databases to third parties</span>
-              <span class="state-red">✗ Impossible by design</span>
+              <span class="label" data-i18n="audit.row6Lbl">Selling databases to third parties</span>
+              <span class="state-red" data-i18n="audit.row6Val">✗ Impossible by design</span>
             </div>
           </div>
 
@@ -861,9 +884,9 @@
       <div class="container">
 
         <div class="section-header">
-          <span class="section-tag">Common Inquiries</span>
-          <h2 class="section-title">Frequently Asked Questions</h2>
-          <p class="section-subtitle">
+          <span class="section-tag" data-i18n="faq.tag">Common Inquiries</span>
+          <h2 class="section-title" data-i18n="faq.title">Frequently Asked Questions</h2>
+          <p class="section-subtitle" data-i18n="faq.subtitle">
             Everything you need to know about WitnessCard's technical architecture, pricing, and privacy guarantees.
           </p>
         </div>
@@ -872,60 +895,60 @@
 
           <div class="faq-card open">
             <button class="faq-trigger">
-              <span>How does the one-time $39 MXN (~$2 USD) lifetime payment work?</span>
+              <span data-i18n="faq.q1">How does the one-time $39 MXN (~$2 USD) lifetime payment work?</span>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polyline points="6 9 12 15 18 9" />
               </svg>
             </button>
-            <div class="faq-answer">
+            <div class="faq-answer" data-i18n="faq.a1">
               The purchase is securely processed through Google Play In-App Billing. Upon completing the one-time payment of $39 Mexican Pesos (or approximately $2 USD in your local currency), the lifetime license is permanently bound to your Google Account. There are no recurring charges, renewals, or hidden fees. If you reinstall the app or upgrade your phone, your purchase restores automatically.
             </div>
           </div>
 
           <div class="faq-card">
             <button class="faq-trigger">
-              <span>What is included in the free mode of 10 scans?</span>
+              <span data-i18n="faq.q2">What is included in the free mode of 10 scans?</span>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polyline points="6 9 12 15 18 9" />
               </svg>
             </button>
-            <div class="faq-answer">
-              The free mode lets you scan up to 10 physical business cards using the complete Google ML Kit engine to verify OCR accuracy and speed on your own device. It includes folder organization and instant global search. Once you reach 10 scans, you can upgrade to the lifetime license to scan unlimited cards.
+            <div class="faq-answer" data-i18n="faq.a2">
+              The free mode lets you scan up to 10 physical business cards to verify OCR accuracy and speed on your own device. It includes folder organization and instant global search. Once you reach 10 scans, you can upgrade to the lifetime license to scan unlimited cards.
             </div>
           </div>
 
           <div class="faq-card">
             <button class="faq-trigger">
-              <span>Does the app truly function without an Internet connection?</span>
+              <span data-i18n="faq.q3">Does the app truly function without an Internet connection?</span>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polyline points="6 9 12 15 18 9" />
               </svg>
             </button>
-            <div class="faq-answer">
+            <div class="faq-answer" data-i18n="faq.a3">
               Yes, 100%. Card scanning, optical character recognition (OCR), folder structuring, QR code generation, and contact exports work seamlessly in airplane mode or in venues without cell reception (such as convention center basements or flights).
             </div>
           </div>
 
           <div class="faq-card">
             <button class="faq-trigger">
-              <span>How do I share my digital card with someone who does not have the app?</span>
+              <span data-i18n="faq.q4">How do I share my digital card with someone who does not have the app?</span>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polyline points="6 9 12 15 18 9" />
               </svg>
             </button>
-            <div class="faq-answer">
+            <div class="faq-answer" data-i18n="faq.a4">
               Your Digital Card generates an industry-standard vCard 3.0 QR code. The other person only needs to point their standard iPhone or Android camera at your screen or saved image. Their phone will instantly recognize the contact card and prompt them to add you to their address book without downloading any app.
             </div>
           </div>
 
           <div class="faq-card">
             <button class="faq-trigger">
-              <span>How do I create backups of my scanned business cards?</span>
+              <span data-i18n="faq.q5">How do I create backups of my scanned business cards?</span>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polyline points="6 9 12 15 18 9" />
               </svg>
             </button>
-            <div class="faq-answer">
+            <div class="faq-answer" data-i18n="faq.a5">
               In the Settings section, tap "Export Backup". WitnessCard will compile your cards, folder hierarchy, and images into an offline compressed .zip file and open Android's native file picker so you can save it anywhere you prefer (internal storage, SD card, Google Drive, or transfer to your computer).
             </div>
           </div>
@@ -948,54 +971,53 @@
             <img src="/assets/logo.svg" alt="WitnessCard Logo" class="brand-logo-img">
             <span>WitnessCard</span>
           </a>
-          <p>
+          <p data-i18n="footer.desc">
             Executive productivity tool and intelligent business card scanner built with an uncompromising focus on user privacy. 100% On-Device.
           </p>
-          <div style="font-size: 0.8rem; color: #64748B;">
-            Crafted with passion in <strong>Guanajuato, Mexico</strong> by <strong>Beltsasar</strong>.
+          <div style="font-size: 0.8rem; color: #64748B;" data-i18n="footer.crafted">
+            Crafted with passion by <strong>Beltsasar</strong>.
           </div>
         </div>
 
         <div class="footer-col">
-          <h4>Product</h4>
+          <h4 data-i18n="footer.colProduct">Product</h4>
           <ul>
-            <li><a href="#features">Key Features</a></li>
-            <li><a href="#digital-card">Digital vCard QR</a></li>
-            <li><a href="#pricing">Pricing (Free &amp; Premium)</a></li>
-            <li><a href="#faq">Frequently Asked Questions</a></li>
+            <li><a href="#features" data-i18n="footer.fKeyFeatures">Key Features</a></li>
+            <li><a href="#digital-card" data-i18n="footer.fDigitalCard">Digital vCard QR</a></li>
+            <li><a href="#pricing" data-i18n="footer.fPricing">Pricing (Free &amp; Premium)</a></li>
+            <li><a href="#faq" data-i18n="footer.fFaq">Frequently Asked Questions</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
-          <h4>Privacy &amp; Legal</h4>
+          <h4 data-i18n="footer.colLegal">Privacy &amp; Legal</h4>
           <ul>
-            <li><a href="/privacy">Privacy Policy</a></li>
-            <li><a href="#privacy">Zero-Knowledge Architecture</a></li>
-            <li><a href="/privacy#seccion-3">Device Permissions</a></li>
-            <li><a href="/privacy#seccion-4">Google Play Billing</a></li>
+            <li><a href="/privacy" data-i18n="footer.fPrivacyPolicy">Privacy Policy</a></li>
+            <li><a href="#privacy" data-i18n="footer.fZeroKnowledge">Zero-Knowledge Architecture</a></li>
+            <li><a href="/privacy#seccion-3" data-i18n="footer.fPermissions">Device Permissions</a></li>
+            <li><a href="/privacy#seccion-4" data-i18n="footer.fBilling">Google Play Billing</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
-          <h4>Support &amp; Contact</h4>
+          <h4 data-i18n="footer.colContact">Support &amp; Contact</h4>
           <ul>
             <li><a href="mailto:support@witnesscard.app"
                 onclick="copySupportEmail('support@witnesscard.app'); return false;">support@witnesscard.app</a></li>
-            <li><span style="color: #64748B;">Developer: Beltsasar</span></li>
-            <li><span style="color: #64748B;">Guanajuato, Mexico</span></li>
-            <li><a href="/privacy#seccion-9">Contact Information</a></li>
+            <li><span style="color: #64748B;" data-i18n="footer.devName">Developer: Beltsasar</span></li>
+            <li><a href="/privacy#seccion-9" data-i18n="footer.contactInfo">Contact Information</a></li>
           </ul>
         </div>
       </div>
 
       <div class="footer-bottom">
         <div>
-          © 2026 WitnessCard. Developed by Beltsasar. All rights reserved.
+          <span data-i18n="footer.copyright">© 2026 WitnessCard. Developed by Beltsasar. All rights reserved.</span>
         </div>
         <div style="display: flex; gap: 20px;">
-          <a href="/privacy">Privacy</a>
-          <a href="#pricing">Pricing</a>
-          <a href="mailto:support@witnesscard.app">Contact</a>
+          <a href="/privacy" data-i18n="footer.bottomPrivacy">Privacy</a>
+          <a href="#pricing" data-i18n="footer.bottomPricing">Pricing</a>
+          <a href="mailto:support@witnesscard.app" data-i18n="footer.bottomContact">Contact</a>
         </div>
       </div>
 
@@ -1004,6 +1026,7 @@
 
   <!-- Scripts -->
   <script src="/js/main.js"></script>
+  <script src="/js/i18n.js"></script>
 </body>
 
 </html>
