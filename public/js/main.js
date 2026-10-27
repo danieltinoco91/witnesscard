@@ -158,8 +158,12 @@ document.addEventListener('DOMContentLoaded', () => {
             if (pill.getAttribute('href') === `#${id}`) {
               legalTocPills.forEach(p => p.classList.remove('active'));
               pill.classList.add('active');
-              // Gently scroll pill into view without jarring page scroll
-              pill.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+              // Scroll the pill container horizontally without affecting the page scroll
+              const scrollContainer = pill.closest('.legal-mobile-toc-scroll');
+              if (scrollContainer) {
+                const targetLeft = pill.offsetLeft - (scrollContainer.clientWidth / 2) + (pill.clientWidth / 2);
+                scrollContainer.scrollTo({ left: targetLeft, behavior: 'smooth' });
+              }
             }
           });
         }
@@ -173,10 +177,10 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Utility to copy support email with notification
-function copySupportEmail(email = 'soporte@witnesscard.app') {
+function copySupportEmail(email = 'support@witnesscard.app') {
   navigator.clipboard.writeText(email).then(() => {
     const toast = document.createElement('div');
-    toast.textContent = `Correo copiado al portapapeles: ${email}`;
+    toast.textContent = `Email copied to clipboard: ${email}`;
     toast.style.position = 'fixed';
     toast.style.bottom = '24px';
     toast.style.right = '24px';

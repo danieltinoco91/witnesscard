@@ -77,6 +77,7 @@ html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 body {
@@ -276,6 +277,7 @@ body.menu-locked {
   transition: all var(--transition-normal);
   text-align: center;
   white-space: nowrap;
+  max-width: 100%;
 }
 
 .btn-primary {
@@ -1013,6 +1015,8 @@ body.menu-locked {
    ========================================================================== */
 .pricing-section {
   background-color: var(--color-bg-page);
+  overflow: hidden;
+  position: relative;
 }
 
 .pricing-banner {
@@ -1034,8 +1038,10 @@ body.menu-locked {
   grid-template-columns: 1fr 1.08fr;
   gap: 32px;
   max-width: 940px;
+  width: 100%;
   margin: 0 auto;
   align-items: stretch;
+  box-sizing: border-box;
 }
 
 .pricing-card {
@@ -1047,6 +1053,10 @@ body.menu-locked {
   flex-direction: column;
   position: relative;
   transition: all var(--transition-normal);
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  min-width: 0;
 }
 
 .pricing-card:hover {
@@ -1057,6 +1067,17 @@ body.menu-locked {
 .pricing-card.featured {
   border: 2px solid var(--color-brand-navy);
   box-shadow: var(--shadow-lg);
+}
+
+.pricing-card .btn {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  white-space: normal;
+  text-align: center;
+  justify-content: center;
+  line-height: 1.35;
+  padding: 13px 18px;
 }
 
 .pricing-badge-popular {
@@ -1071,6 +1092,9 @@ body.menu-locked {
   border-radius: var(--radius-full);
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  max-width: calc(100% - 32px);
+  white-space: nowrap;
+  box-sizing: border-box;
 }
 
 .pricing-tier-name {
@@ -1178,6 +1202,8 @@ body.menu-locked {
   background-color: var(--color-brand-navy);
   color: var(--color-text-inverse);
   padding: 72px 0;
+  overflow: hidden;
+  position: relative;
 }
 
 .privacy-spotlight-content {
@@ -1185,6 +1211,13 @@ body.menu-locked {
   grid-template-columns: 1fr 1fr;
   gap: 48px;
   align-items: center;
+  min-width: 0;
+  width: 100%;
+}
+
+.privacy-spotlight-text {
+  min-width: 0;
+  max-width: 100%;
 }
 
 .privacy-spotlight-text h2 {
@@ -1193,6 +1226,8 @@ body.menu-locked {
   letter-spacing: -0.025em;
   margin-bottom: 16px;
   color: #FFFFFF;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .privacy-spotlight-text p {
@@ -1207,12 +1242,21 @@ body.menu-locked {
   flex-direction: column;
   gap: 14px;
   margin-bottom: 28px;
+  min-width: 0;
+  width: 100%;
 }
 
 .privacy-point {
   display: flex;
   align-items: flex-start;
   gap: 12px;
+  min-width: 0;
+  width: 100%;
+}
+
+.privacy-point > div {
+  min-width: 0;
+  flex: 1 1 auto;
 }
 
 .privacy-point-icon {
@@ -1248,6 +1292,9 @@ body.menu-locked {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .manifesto-header {
@@ -1256,6 +1303,8 @@ body.menu-locked {
   justify-content: space-between;
   border-bottom: 1px solid #1E293B;
   padding-bottom: 14px;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .manifesto-badge {
@@ -1266,6 +1315,7 @@ body.menu-locked {
   padding: 3px 8px;
   border-radius: var(--radius-sm);
   font-family: var(--font-mono);
+  flex-shrink: 0;
 }
 
 .manifesto-item {
@@ -1275,10 +1325,16 @@ body.menu-locked {
   font-size: 0.88rem;
   padding: 8px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  gap: 10px;
+  min-width: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .manifesto-item .label {
   color: #94A3B8;
+  min-width: 0;
+  overflow-wrap: break-word;
 }
 
 .manifesto-item .state-green {
@@ -1287,6 +1343,7 @@ body.menu-locked {
   display: flex;
   align-items: center;
   gap: 5px;
+  flex-shrink: 0;
 }
 
 .manifesto-item .state-red {
@@ -1295,6 +1352,7 @@ body.menu-locked {
   display: flex;
   align-items: center;
   gap: 5px;
+  flex-shrink: 0;
 }
 
 /* ==========================================================================
@@ -1705,7 +1763,9 @@ body.menu-locked {
 
   .pricing-grid {
     grid-template-columns: 1fr;
-    max-width: 480px;
+    max-width: 500px;
+    width: 100%;
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1746,6 +1806,24 @@ body.menu-locked {
 
   .nav-menu {
     display: none;
+  }
+
+  .nav-actions #btn-nav-download {
+    display: none;
+  }
+
+  .privacy-spotlight-text .btn {
+    white-space: normal;
+    text-align: left;
+    max-width: 100%;
+    line-height: 1.4;
+    padding: 12px 18px;
+  }
+
+  .privacy-spotlight-text h2 {
+    font-size: clamp(1.6rem, 5vw + 0.3rem, 2.2rem);
+    word-break: break-word;
+    overflow-wrap: break-word;
   }
 
   .mobile-toggle {
@@ -1954,29 +2032,53 @@ body.menu-locked {
   }
 
   .privacy-manifesto-box {
-    padding: 22px 18px;
+    padding: 20px 16px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .manifesto-item {
-    flex-wrap: wrap;
-    gap: 6px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
     padding: 10px 0;
+    width: 100%;
   }
 
   .manifesto-item .label {
-    font-size: 0.82rem;
+    font-size: 0.84rem;
+    width: 100%;
   }
 
-  .manifesto-item span:last-child {
-    font-size: 0.78rem;
+  .manifesto-item .state-green,
+  .manifesto-item .state-red {
+    font-size: 0.8rem;
+    align-self: flex-start;
+  }
+
+  .pricing-grid {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .pricing-card {
-    padding: 32px 20px 28px;
+    padding: 32px 18px 26px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .pricing-badge-popular {
+    right: 18px;
+    font-size: 0.7rem;
+    padding: 3px 10px;
+    max-width: calc(100% - 36px);
   }
 
   .pricing-price-wrapper .price-amount {
-    font-size: 3.2rem;
+    font-size: 2.8rem;
   }
 
   .faq-trigger {
@@ -2097,7 +2199,23 @@ body.menu-locked {
   }
 
   .pricing-tier-name {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    overflow-wrap: break-word;
+  }
+
+  .pricing-card {
+    padding: 28px 16px 22px;
+  }
+
+  .pricing-badge-popular {
+    right: 14px;
+    font-size: 0.65rem;
+    padding: 2px 8px;
+    max-width: calc(100% - 28px);
+  }
+
+  .pricing-price-wrapper .price-amount {
+    font-size: 2.5rem;
   }
 
   .pricing-card .btn {

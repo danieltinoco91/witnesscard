@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WitnessCard — Escáner Inteligente de Tarjetas de Presentación 100% On-Device</title>
+  <title>WitnessCard — Smart Business Card Scanner 100% On-Device</title>
   <meta name="description"
-    content="WitnessCard es la app para Android construida con Kotlin y Jetpack Compose para escanear, organizar y compartir tarjetas de presentación con OCR local y privacidad absoluta.">
+    content="WitnessCard is the native Android app built with Kotlin and Jetpack Compose to scan, organize, and share business cards with local OCR and absolute privacy.">
   <meta name="keywords"
-    content="escáner de tarjetas de presentación, business card scanner, ocr local, android kotlin, vcard qr, privacidad, google ml kit">
+    content="business card scanner, local ocr, android kotlin, vcard qr, privacy-first, google ml kit, contact manager">
   <meta name="author" content="Beltsasar">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="WitnessCard — Escáner Inteligente de Tarjetas de Presentación">
+  <meta property="og:title" content="WitnessCard — Smart Business Card Scanner">
   <meta property="og:description"
-    content="Procesamiento 100% en tu dispositivo con Google ML Kit. Escanea, organiza en carpetas jerárquicas y crea tu tarjeta digital con código QR vCard sin servidores externos.">
+    content="100% On-Device processing powered by Google ML Kit. Scan, organize into hierarchical folders, and generate your digital card with vCard QR codes without external cloud servers.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="/assets/app_icon.webp">
 
@@ -41,39 +41,39 @@
   <header class="navbar">
     <div class="container">
       <div class="nav-wrapper">
-        <a href="/" class="brand-link" aria-label="WitnessCard Inicio">
+        <a href="/" class="brand-link" aria-label="WitnessCard Home">
           <img src="/assets/logo.svg" alt="WitnessCard Logo" class="brand-logo-img">
           <span class="brand-name">WitnessCard</span>
           <span class="brand-tag">100% On-Device</span>
         </a>
 
         <ul class="nav-menu" id="navMenu">
-          <li class="nav-item"><a href="#funciones">Funciones</a></li>
-          <li class="nav-item"><a href="#tarjeta-digital">Tarjeta Digital</a></li>
-          <li class="nav-item"><a href="#privacidad">Privacidad</a></li>
-          <li class="nav-item"><a href="#precios">Precios</a></li>
-          <li class="nav-item"><a href="#faq">Preguntas</a></li>
-          <li class="nav-item"><a href="/politica-de-privacidad">Legal</a></li>
+          <li class="nav-item"><a href="#features">Features</a></li>
+          <li class="nav-item"><a href="#digital-card">Digital Card</a></li>
+          <li class="nav-item"><a href="#privacy">Privacy</a></li>
+          <li class="nav-item"><a href="#pricing">Pricing</a></li>
+          <li class="nav-item"><a href="#faq">FAQ</a></li>
+          <li class="nav-item"><a href="/privacy">Legal</a></li>
           <li class="nav-mobile-cta">
-            <a href="#precios" class="btn btn-primary btn-mobile-cta">
+            <a href="#pricing" class="btn btn-primary btn-mobile-cta">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                 stroke-linecap="round" stroke-linejoin="round">
                 <path d="M3 15v4c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2v-4M17 9l-5 5-5-5M12 12.8V2.5" />
               </svg>
-              <span>Obtener App WitnessCard</span>
+              <span>Get WitnessCard App</span>
             </a>
           </li>
         </ul>
 
         <div class="nav-actions">
-          <a href="#precios" class="btn btn-primary" id="btn-nav-download">
+          <a href="#pricing" class="btn btn-primary" id="btn-nav-download">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
               stroke-linecap="round" stroke-linejoin="round">
               <path d="M3 15v4c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2v-4M17 9l-5 5-5-5M12 12.8V2.5" />
             </svg>
-            <span>Obtener App</span>
+            <span>Get App</span>
           </a>
-          <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir Menú de Navegación" aria-expanded="false" aria-controls="navMenu">
+          <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
             <span class="hamburger-bar"></span>
             <span class="hamburger-bar"></span>
             <span class="hamburger-bar"></span>
@@ -98,30 +98,28 @@
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
               </svg>
-              <span>Privacidad Absoluta • 100% En el Dispositivo</span>
+              <span>Absolute Privacy • 100% On-Device</span>
             </div>
 
             <h1 class="hero-title">
-              El escáner de tarjetas que <span class="highlight">nunca envía tus datos</span> a la nube.
+              The business card scanner that <span class="highlight">never sends your data</span> to the cloud.
             </h1>
 
             <p class="hero-desc">
-              Transforma tarjetas de presentación físicas en contactos digitales organizados al instante. Desarrollada
-              en Kotlin con Jetpack Compose, impulsada por Google ML Kit y modelos de IA locales. Sin servidores
-              externos. Sin suscripciones forzadas.
+              Transform physical business cards into neatly organized digital contacts in seconds. Engineered in Kotlin with Jetpack Compose, powered by Google ML Kit and local neural models. No remote servers. No forced subscriptions.
             </p>
 
             <div class="hero-actions">
-              <a href="#precios" class="btn btn-primary btn-lg" id="btn-hero-free">
+              <a href="#pricing" class="btn btn-primary btn-lg" id="btn-hero-free">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                   <path
                     d="M3.609 1.814L13.792 12 3.61 22.186a1.5 1.5 0 0 1-.61-.956V2.77c0-.38.22-.72.609-.956zM15.207 13.414l2.586 2.586-10.74 6.2c-.417.24-.87.16-1.14-.11l9.294-8.676zM15.207 10.586L5.913 1.91c.27-.27.723-.35 1.14-.11l10.74 6.2-2.586 2.586zM16.621 12l3.35 1.934c.82.473.82 1.66 0 2.132L16.62 12z" />
                 </svg>
-                <span>Descargar en Google Play</span>
+                <span>Download on Google Play</span>
               </a>
 
-              <a href="#funciones" class="btn btn-secondary btn-lg">
-                <span>Ver Cómo Funciona</span>
+              <a href="#features" class="btn btn-secondary btn-lg">
+                <span>See How It Works</span>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>
@@ -139,13 +137,13 @@
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                   <polyline points="20 6 9 17 4 12"></polyline>
                 </svg>
-                <span>10 Escaneos Gratis</span>
+                <span>10 Free Scans</span>
               </div>
               <div class="trust-item">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                   <polyline points="20 6 9 17 4 12"></polyline>
                 </svg>
-                <span>Vitalicio $39 MXN (~$2 USD)</span>
+                <span>Lifetime $39 MXN (~$2 USD)</span>
               </div>
             </div>
           </div>
@@ -155,13 +153,13 @@
             <!-- Simulator Switcher Tabs -->
             <div class="interactive-tabs" role="tablist">
               <button class="tab-btn active" data-tab="scanner" role="tab" aria-selected="true">
-                1. Escáner OCR
+                1. OCR Scanner
               </button>
               <button class="tab-btn" data-tab="folders" role="tab" aria-selected="false">
-                2. Carpetas
+                2. Folders
               </button>
               <button class="tab-btn" data-tab="mycard" role="tab" aria-selected="false">
-                3. Tarjeta QR
+                3. QR Card
               </button>
             </div>
 
@@ -190,36 +188,36 @@
                   <div class="scanner-viewfinder">
                     <div class="scan-beam"></div>
                     <div class="scan-card-target">
-                      <div style="font-size: 0.7rem; font-weight: 700; color: #FFFFFF;">DR. ALEJANDRO NAVARRO</div>
-                      <div style="font-size: 0.58rem; color: #94A3B8;">Cardiólogo Clínico & Investigador</div>
-                      <div style="font-size: 0.55rem; color: #2DD4BF; margin-top: 4px;">Hospital Ángeles León</div>
-                      <div style="font-size: 0.52rem; color: #64748B;">alejandro@cardio.mx • +52 477 123 4567</div>
+                      <div style="font-size: 0.7rem; font-weight: 700; color: #FFFFFF;">DR. ALEXANDER VANCE</div>
+                      <div style="font-size: 0.58rem; color: #94A3B8;">Clinical Cardiologist &amp; Researcher</div>
+                      <div style="font-size: 0.55rem; color: #2DD4BF; margin-top: 4px;">Metropolitan Health Center</div>
+                      <div style="font-size: 0.52rem; color: #64748B;">alexander@cardiohealth.org • +1 415 555 0192</div>
                     </div>
                   </div>
 
                   <div class="detected-fields">
                     <div style="font-size: 0.72rem; font-weight: 700; color: #0F172A; margin-bottom: 2px;">
-                      Campos Extraídos por IA Local:
+                      Fields Extracted by Local AI:
                     </div>
                     <div class="extracted-item">
-                      <span class="label">Contacto:</span>
-                      <span class="val">Dr. Alejandro Navarro</span>
+                      <span class="label">Contact:</span>
+                      <span class="val">Dr. Alexander Vance</span>
                       <span class="badge-verified">✓ 100%</span>
                     </div>
                     <div class="extracted-item">
-                      <span class="label">Puesto:</span>
-                      <span class="val">Cardiólogo Clínico</span>
+                      <span class="label">Role:</span>
+                      <span class="val">Clinical Cardiologist</span>
                       <span class="badge-verified">✓ OCR</span>
                     </div>
                     <div class="extracted-item">
-                      <span class="label">Teléfono:</span>
-                      <span class="val">+52 477 123 4567</span>
-                      <span class="badge-verified">✓ Directo</span>
+                      <span class="label">Phone:</span>
+                      <span class="val">+1 415 555 0192</span>
+                      <span class="badge-verified">✓ Direct</span>
                     </div>
                     <div class="extracted-item">
-                      <span class="label">Carpeta:</span>
-                      <span class="val" style="color: #1E68F6;">📁 Médicos & Salud</span>
-                      <span class="badge-verified">✓ Guardado</span>
+                      <span class="label">Folder:</span>
+                      <span class="val" style="color: #1E68F6;">📁 Medical &amp; Health</span>
+                      <span class="badge-verified">✓ Saved</span>
                     </div>
                   </div>
                 </div>
@@ -227,56 +225,56 @@
                 <!-- Panel 2: Hierarchical Folders & Global Search -->
                 <div class="screen-panel" id="panel-folders">
                   <div class="breadcrumbs-bar">
-                    <span>Inicio</span>
+                    <span>Home</span>
                     <span>›</span>
-                    <span style="color: #1E68F6;">Clientes VIP</span>
+                    <span style="color: #1E68F6;">VIP Clients</span>
                     <span>›</span>
-                    <span>Bajío</span>
+                    <span>West Coast</span>
                   </div>
 
                   <div class="folder-grid-sim">
                     <div class="sim-folder-chip">
                       <span>📁</span>
                       <div>
-                        <div>Tech & AI</div>
-                        <span style="font-size: 0.6rem; color: #94A3B8;">14 tarjetas</span>
+                        <div>Tech &amp; AI</div>
+                        <span style="font-size: 0.6rem; color: #94A3B8;">14 cards</span>
                       </div>
                     </div>
                     <div class="sim-folder-chip">
                       <span>📁</span>
                       <div>
-                        <div>Proveedores</div>
-                        <span style="font-size: 0.6rem; color: #94A3B8;">8 tarjetas</span>
+                        <div>Suppliers</div>
+                        <span style="font-size: 0.6rem; color: #94A3B8;">8 cards</span>
                       </div>
                     </div>
                   </div>
 
                   <div style="font-size: 0.72rem; font-weight: 700; color: #0F172A; margin: 6px 0 4px;">
-                    Tarjetas en esta carpeta:
+                    Cards in this folder:
                   </div>
 
                   <div class="sim-card-row">
                     <div class="sim-card-info">
-                      <h4>Sofia Valenzuela</h4>
-                      <p>Directora de Operaciones • InnovaTech</p>
+                      <h4>Sophia Valenzuela</h4>
+                      <p>Chief Operations Officer • InnovaTech</p>
                     </div>
-                    <span class="sim-folder-tag">📁 Bajío</span>
+                    <span class="sim-folder-tag">📁 West Coast</span>
                   </div>
 
                   <div class="sim-card-row">
                     <div class="sim-card-info">
-                      <h4>Ing. Roberto Lara</h4>
-                      <p>Socio Fundador • Nexo Soluciones</p>
+                      <h4>Robert Sterling, P.E.</h4>
+                      <p>Managing Partner • Nexus Solutions</p>
                     </div>
-                    <span class="sim-folder-tag">📁 Bajío</span>
+                    <span class="sim-folder-tag">📁 West Coast</span>
                   </div>
 
                   <div class="sim-card-row">
                     <div class="sim-card-info">
-                      <h4>Lic. Mariana Torres</h4>
-                      <p>Consultora Financiera • Capital Gto</p>
+                      <h4>Mariana Torres, CFA</h4>
+                      <p>Financial Consultant • Capital Partners</p>
                     </div>
-                    <span class="sim-folder-tag">📁 Bajío</span>
+                    <span class="sim-folder-tag">📁 West Coast</span>
                   </div>
                 </div>
 
@@ -286,7 +284,7 @@
                     <div class="card-preview-header">
                       <div class="card-name-title">
                         <h3>Beltsasar</h3>
-                        <p>Desarrollador de Software</p>
+                        <p>Software Engineer</p>
                         <p style="font-size: 0.66rem; opacity: 0.8;">WitnessCard</p>
                       </div>
                       <div
@@ -318,13 +316,13 @@
                     </div>
 
                     <div style="font-size: 0.65rem; text-align: center; opacity: 0.9;">
-                      Código vCard Offline • Escanea con cualquier móvil
+                      Offline vCard Code • Scan with any smartphone
                     </div>
                   </div>
 
                   <div style="margin-top: 8px; text-align: center;">
                     <div style="font-size: 0.68rem; font-weight: 600; color: #64748B; margin-bottom: 4px;">
-                      Probar Temas Visuales:
+                      Try Visual Themes:
                     </div>
                     <div class="theme-selector-chips">
                       <span class="theme-dot dot-navy" data-theme="navy" title="Dark Navy"></span>
@@ -365,9 +363,8 @@
                 <line x1="1" y1="14" x2="4" y2="14" />
               </svg>
             </div>
-            <h4>Procesamiento 100% On-Device</h4>
-            <p>La extracción de texto OCR y la inferencia semántica se ejecutan localmente en el procesador de tu
-              teléfono con Google ML Kit.</p>
+            <h4>100% On-Device Processing</h4>
+            <p>OCR text extraction and semantic structuring run locally on your phone's processor using Google ML Kit.</p>
           </div>
 
           <div class="trust-pillar">
@@ -379,9 +376,8 @@
                 <line x1="12" y1="22.08" x2="12" y2="12" />
               </svg>
             </div>
-            <h4>Cero Servidores en la Nube</h4>
-            <p>No tenemos bases de datos remotas. Ni un solo byte de tus contactos sale de tu dispositivo hacia
-              servidores de terceros.</p>
+            <h4>Zero Cloud Servers</h4>
+            <p>We do not operate remote databases. Not a single byte of your contact information ever leaves your device.</p>
           </div>
 
           <div class="trust-pillar">
@@ -391,9 +387,8 @@
                 <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
               </svg>
             </div>
-            <h4>Sin Cuentas ni Rastreadores</h4>
-            <p>No requieres crear una cuenta, iniciar sesión ni proporcionar tu correo para comenzar a escanear. Abre la
-              app y listo.</p>
+            <h4>No Accounts or Trackers</h4>
+            <p>No registration, sign-in, or email required to begin scanning. Just open the app and get straight to business.</p>
           </div>
 
           <div class="trust-pillar">
@@ -408,9 +403,8 @@
                 <line x1="10" y1="16" x2="14" y2="16" />
               </svg>
             </div>
-            <h4>Facturación Directa de Google</h4>
-            <p>Las compras integradas son procesadas de extremo a extremo por Google Play Billing. No almacenamos
-              tarjetas ni datos bancarios.</p>
+            <h4>Direct Google Play Billing</h4>
+            <p>In-app upgrades are processed end-to-end by Google Play. We never handle or store your financial details.</p>
           </div>
 
         </div>
@@ -420,15 +414,15 @@
     <!-- ========================================================================
          Core Features Grid
          ======================================================================== -->
-    <section class="section section-light" id="funciones">
+    <section class="section section-light" id="features">
+      <div id="funciones" style="position: absolute; top: 0;"></div>
       <div class="container">
 
         <div class="section-header">
-          <span class="section-tag">Capacidades Profesionales</span>
-          <h2 class="section-title">Diseñado para la máxima productividad y privacidad ejecutiva</h2>
+          <span class="section-tag">Executive Capabilities</span>
+          <h2 class="section-title">Built for maximum productivity and executive privacy</h2>
           <p class="section-subtitle">
-            Cada detalle de WitnessCard fue construido pensando en conferencias, reuniones de negocios y gestión de
-            redes profesionales sin complicaciones.
+            Every feature in WitnessCard was designed specifically for networking conferences, executive meetings, and effortless contact management.
           </p>
         </div>
 
@@ -442,10 +436,9 @@
                 <circle cx="12" cy="13" r="4" />
               </svg>
             </div>
-            <h3>Escaneo OCR Inteligente</h3>
-            <p>Captura automática de bordes, corrección de perspectiva y eliminación de sombras utilizando el motor
-              oficial de Google ML Kit Document Scanner.</p>
-            <span class="feature-tag">100% Fuera de Línea</span>
+            <h3>Intelligent OCR Scanning</h3>
+            <p>Automatic edge detection, perspective correction, and shadow removal powered by the official Google ML Kit Document Scanner engine.</p>
+            <span class="feature-tag">100% Offline</span>
           </div>
 
           <!-- Feature 2 -->
@@ -455,10 +448,9 @@
                 <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" />
               </svg>
             </div>
-            <h3>Carpetas y Subcarpetas</h3>
-            <p>Estructura tus contactos por empresa, industria o evento con carpetas jerárquicas y barra de navegación
-              por migas de pan (Breadcrumbs).</p>
-            <span class="feature-tag">Organización Total</span>
+            <h3>Folders &amp; Subfolders</h3>
+            <p>Organize contacts cleanly by company, industry, or event with hierarchical nested folders and intuitive breadcrumb navigation.</p>
+            <span class="feature-tag">Total Organization</span>
           </div>
 
           <!-- Feature 3 -->
@@ -471,10 +463,9 @@
                 <rect x="3" y="14" width="7" height="7" />
               </svg>
             </div>
-            <h3>Tarjeta Digital con QR vCard</h3>
-            <p>Crea tu perfil con foto, nombre, empresa y logotipo. Genera un código QR legible por cualquier teléfono
-              Android o iPhone sin instalar aplicaciones.</p>
-            <span class="feature-tag">Conexión Instantánea</span>
+            <h3>Digital Card with vCard QR</h3>
+            <p>Build your professional card with photo, company, title, and logo. Generates a standard vCard QR code readable by any iPhone or Android without extra apps.</p>
+            <span class="feature-tag">Instant Exchange</span>
           </div>
 
           <!-- Feature 4 -->
@@ -485,10 +476,9 @@
                 <line x1="21" y1="21" x2="16.65" y2="16.65" />
               </svg>
             </div>
-            <h3>Búsqueda Global Ultrarrápida</h3>
-            <p>Encuentra a cualquier persona en milisegundos buscando por nombre, empresa o cargo, con indicador visual
-              de la carpeta en la que reside.</p>
-            <span class="feature-tag">Vistas Lista y Cuadrícula</span>
+            <h3>Ultra-Fast Global Search</h3>
+            <p>Find any connection in milliseconds by searching names, companies, or job titles, complete with visual badges showing which folder they belong to.</p>
+            <span class="feature-tag">List &amp; Grid Views</span>
           </div>
 
           <!-- Feature 5 -->
@@ -500,10 +490,9 @@
                 <polyline points="17 11 19 13 23 9" />
               </svg>
             </div>
-            <h3>Exportación a Contactos</h3>
-            <p>Exporta tarjetas escaneadas directamente a la agenda nativa o a Contactos de Google con un solo toque, o
-              genera un archivo universal .vcf.</p>
-            <span class="feature-tag">Sincronización Opcional</span>
+            <h3>Export to Device Contacts</h3>
+            <p>Export scanned cards directly into Android's native address book or Google Contacts with a single tap, or export universal .vcf contact files.</p>
+            <span class="feature-tag">Optional Sync</span>
           </div>
 
           <!-- Feature 6 -->
@@ -515,44 +504,40 @@
                 <line x1="12" y1="15" x2="12" y2="3" />
               </svg>
             </div>
-            <h3>Copias de Seguridad Locales</h3>
-            <p>Exporta e importa respaldos completos en formato .zip mediante el Selector de Archivos seguro de Android.
-              Cambia de móvil sin perder nada.</p>
-            <span class="feature-tag">Control Soberano</span>
+            <h3>Local Backups &amp; Portability</h3>
+            <p>Export and import complete .zip backups using Android's secure Storage Access Framework. Switch phones without losing a single contact.</p>
+            <span class="feature-tag">Sovereign Control</span>
           </div>
 
         </div>
 
         <!-- Deep Dive Split: Digital Card -->
-        <div class="feature-split-row" id="tarjeta-digital">
+        <div class="feature-split-row" id="digital-card" style="position: relative;">
+          <div id="tarjeta-digital" style="position: absolute; top: 0;"></div>
           <div class="split-content">
-            <span class="section-tag" style="margin-bottom: 12px;">Tu Firma Digital</span>
-            <h3>Tu propia tarjeta de presentación interactiva con QR vCard</h3>
+            <span class="section-tag" style="margin-bottom: 12px;">Your Digital Signature</span>
+            <h3>Your interactive digital business card with vCard QR</h3>
             <p>
-              Nunca más te quedarás sin tarjetas en un evento. WitnessCard te permite diseñar tu tarjeta digital
-              profesional personalizada con tu fotografía, logotipo empresarial y datos de contacto directos.
+              Never run out of paper business cards at an event again. WitnessCard lets you craft your personalized executive card complete with your photo, corporate logo, and one-tap contact details.
             </p>
             <ul class="split-checklist">
               <li>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span><strong>Compatible universal:</strong> Cualquier persona puede escanear tu QR con la app nativa de
-                  cámara de su iPhone o Android y guardar tu contacto directo.</span>
+                <span><strong>Universal compatibility:</strong> Anyone can scan your QR code with their native iPhone or Android camera to instantly save your contact card.</span>
               </li>
               <li>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span><strong>6 temas visuales elegantes:</strong> Dark Navy, Classic Light, Midnight Cyan, Royal Blue,
-                  Charcoal Black y Emerald.</span>
+                <span><strong>6 elegant visual themes:</strong> Dark Navy, Classic Light, Midnight Cyan, Royal Blue, Charcoal Black, and Emerald.</span>
               </li>
               <li>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span><strong>Exportar imagen a galería:</strong> Guarda el código QR de alta resolución con tu marca en
-                  la carpeta pública de fotos para compartirlo en WhatsApp o redes.</span>
+                <span><strong>Save image to gallery:</strong> Export a high-resolution branded QR code image to your photo library for easy sharing via WhatsApp or social media.</span>
               </li>
             </ul>
           </div>
@@ -563,7 +548,7 @@
               <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px;">
                 <div>
                   <div style="font-size: 1.15rem; font-weight: 800;">Beltsasar</div>
-                  <div style="font-size: 0.82rem; color: #2DD4BF;">Desarrollador de Software • Kotlin & Android</div>
+                  <div style="font-size: 0.82rem; color: #2DD4BF;">Software Engineer • Kotlin &amp; Android</div>
                 </div>
                 <div
                   style="width: 44px; height: 44px; border-radius: 8px; background: rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; font-weight: 800;">
@@ -589,16 +574,15 @@
                   </svg>
                 </div>
                 <div style="font-size: 0.8rem; line-height: 1.45;">
-                  <div style="color: #F8FAFC; font-weight: 600;">Estándar vCard 3.0</div>
-                  <div style="color: #94A3B8; font-size: 0.74rem;">Al escanearse abre automáticamente la ficha de
-                    contacto nativa en iOS y Android. Cero intermediarios web.</div>
+                  <div style="color: #F8FAFC; font-weight: 600;">Standard vCard 3.0</div>
+                  <div style="color: #94A3B8; font-size: 0.74rem;">Scanning automatically opens the native contact card on iOS and Android. Zero web intermediaries.</div>
                 </div>
               </div>
 
               <div
                 style="display: flex; justify-content: space-between; font-size: 0.76rem; color: #94A3B8; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 12px;">
-                <span>📍 Guanajuato, México</span>
-                <span style="color: #2DD4BF;">✓ Verificado On-Device</span>
+                <span>📍 Guanajuato, Mexico</span>
+                <span style="color: #2DD4BF;">✓ Verified On-Device</span>
               </div>
             </div>
           </div>
@@ -610,15 +594,15 @@
     <!-- ========================================================================
          Pricing Section
          ======================================================================== -->
-    <section class="section pricing-section" id="precios">
+    <section class="section pricing-section" id="pricing">
+      <div id="precios" style="position: absolute; top: 0;"></div>
       <div class="container">
 
         <div class="section-header">
-          <span class="section-tag">Precios Transparentes</span>
-          <h2 class="section-title">Elige tu modo de uso</h2>
+          <span class="section-tag">Transparent Pricing</span>
+          <h2 class="section-title">Choose how you want to use WitnessCard</h2>
           <p class="section-subtitle">
-            Sin suscripciones mensuales abusivas. Pruébalo gratis y desbloquea el uso ilimitado de por vida por el costo
-            de un café.
+            No greedy monthly subscriptions. Try it free, and unlock unlimited lifetime access for the price of a cup of coffee.
           </p>
         </div>
 
@@ -626,19 +610,19 @@
 
           <!-- Plan Free -->
           <div class="pricing-card">
-            <h3 class="pricing-tier-name">Modo Gratuito</h3>
+            <h3 class="pricing-tier-name">Free Edition</h3>
             <p class="pricing-desc">
-              Ideal para probar la velocidad del motor OCR y la precisión en tus primeras tarjetas de negocios.
+              Ideal for experiencing the speed and precision of our on-device OCR engine on your first business cards.
             </p>
 
             <div class="pricing-price-wrapper">
               <div class="price-row">
                 <span class="price-currency">$</span>
                 <span class="price-amount">0</span>
-                <span class="price-currency">MXN</span>
+                <span class="price-currency">USD</span>
               </div>
-              <div class="price-usd-approx">Totalmente Gratis</div>
-              <div class="price-cadence" style="color: #64748B;">Para siempre</div>
+              <div class="price-usd-approx">100% Free</div>
+              <div class="price-cadence" style="color: #64748B;">Forever</div>
             </div>
 
             <ul class="pricing-features-list">
@@ -646,65 +630,65 @@
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span><strong>10 escaneos completos</strong> incluidos</span>
+                <span><strong>10 full card scans</strong> included</span>
               </li>
               <li class="pricing-feature-item">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span>Procesamiento OCR 100% On-Device</span>
+                <span>100% On-Device OCR processing</span>
               </li>
               <li class="pricing-feature-item">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span>Organización en carpetas principales</span>
+                <span>Organize in main folders</span>
               </li>
               <li class="pricing-feature-item">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span>Búsqueda instantánea y vista lista/cuadrícula</span>
+                <span>Instant search and list/grid views</span>
               </li>
               <li class="pricing-feature-item muted">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <line x1="18" y1="6" x2="6" y2="18" />
                   <line x1="6" y1="6" x2="18" y2="18" />
                 </svg>
-                <span>Escaneos ilimitados (limitado a 10)</span>
+                <span>Unlimited scans (capped at 10)</span>
               </li>
               <li class="pricing-feature-item muted">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <line x1="18" y1="6" x2="6" y2="18" />
                   <line x1="6" y1="6" x2="18" y2="18" />
                 </svg>
-                <span>Tarjeta Digital Propia con QR vCard</span>
+                <span>Custom Digital Card with vCard QR</span>
               </li>
               <li class="pricing-feature-item muted">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <line x1="18" y1="6" x2="6" y2="18" />
                   <line x1="6" y1="6" x2="18" y2="18" />
                 </svg>
-                <span>Exportación masiva a Google Contactos (.vcf)</span>
+                <span>Bulk export to Google Contacts (.vcf)</span>
               </li>
             </ul>
 
-            <a href="#precios" class="btn btn-secondary btn-lg" id="btn-pricing-free">
-              <span>Instalar Modo Gratuito</span>
+            <a href="#pricing" class="btn btn-secondary btn-lg" id="btn-pricing-free">
+              <span>Install Free Edition</span>
             </a>
 
             <div class="pricing-guarantee">
-              <span>Sin anuncios invasivos • Sin registro</span>
+              <span>No intrusive ads • No account required</span>
             </div>
           </div>
 
           <!-- Plan Premium Lifetime -->
           <div class="pricing-card featured">
-            <div class="pricing-badge-popular">Pago Único Vitalicio</div>
+            <div class="pricing-badge-popular">Lifetime One-Time Purchase</div>
 
-            <h3 class="pricing-tier-name">Licencia Premium de Por Vida</h3>
+            <h3 class="pricing-tier-name">Premium Lifetime License</h3>
             <p class="pricing-desc">
-              Acceso completo e ilimitado para profesionales. Una sola inversión para toda la vida.
+              Complete, unrestricted access for executives and professionals. A single investment for life.
             </p>
 
             <div class="pricing-price-wrapper">
@@ -713,8 +697,8 @@
                 <span class="price-amount">39</span>
                 <span class="price-currency">MXN</span>
               </div>
-              <div class="price-usd-approx">Aproximadamente <strong>~$2 USD</strong></div>
-              <div class="price-cadence">⚡ Un solo pago • Sin mensualidades</div>
+              <div class="price-usd-approx">Approximately <strong>~$2 USD</strong></div>
+              <div class="price-cadence">⚡ One-time payment • No monthly fees</div>
             </div>
 
             <ul class="pricing-features-list">
@@ -722,59 +706,59 @@
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span><strong>Escaneos ilimitados</strong> de por vida</span>
+                <span><strong>Unlimited scans</strong> forever</span>
               </li>
               <li class="pricing-feature-item">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span><strong>Tarjeta Digital Propia</strong> con código QR vCard</span>
+                <span><strong>Custom Digital Business Card</strong> with vCard QR code</span>
               </li>
               <li class="pricing-feature-item">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span><strong>6 temas visuales</strong> y logotipo corporativo</span>
+                <span><strong>6 visual themes</strong> and corporate logo support</span>
               </li>
               <li class="pricing-feature-item">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span><strong>Carpetas y subcarpetas ilimitadas</strong> con migas de pan</span>
+                <span><strong>Unlimited nested folders</strong> with breadcrumbs</span>
               </li>
               <li class="pricing-feature-item">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span>Exportación directa a Google Contactos / Agenda (.vcf)</span>
+                <span>Direct export to Google Contacts / Address Book (.vcf)</span>
               </li>
               <li class="pricing-feature-item">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span>Copias de seguridad completas en archivo .zip</span>
+                <span>Full offline backups in .zip format</span>
               </li>
               <li class="pricing-feature-item">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span>Todas las futuras actualizaciones incluidas</span>
+                <span>All future updates and improvements included</span>
               </li>
             </ul>
 
-            <a href="#precios" class="btn btn-blue btn-lg" id="btn-pricing-premium">
+            <a href="#pricing" class="btn btn-blue btn-lg" id="btn-pricing-premium">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                 <path
                   d="M3.609 1.814L13.792 12 3.61 22.186a1.5 1.5 0 0 1-.61-.956V2.77c0-.38.22-.72.609-.956zM15.207 13.414l2.586 2.586-10.74 6.2c-.417.24-.87.16-1.14-.11l9.294-8.676zM15.207 10.586L5.913 1.91c.27-.27.723-.35 1.14-.11l10.74 6.2-2.586 2.586zM16.621 12l3.35 1.934c.82.473.82 1.66 0 2.132L16.62 12z" />
               </svg>
-              <span>Comprar en Google Play ($39 MXN)</span>
+              <span>Buy on Google Play ($39 MXN / ~$2 USD)</span>
             </a>
 
             <div class="pricing-guarantee">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
               </svg>
-              <span>Procesado por Google Play Billing • Garantía oficial</span>
+              <span>Processed by Google Play Billing • Official purchase protection</span>
             </div>
           </div>
 
@@ -786,48 +770,47 @@
     <!-- ========================================================================
          Privacy Spotlight Section
          ======================================================================== -->
-    <section class="privacy-spotlight" id="privacidad">
+    <section class="privacy-spotlight" id="privacy">
+      <div id="privacidad" style="position: absolute; top: 0;"></div>
       <div class="container">
         <div class="privacy-spotlight-content">
 
           <div class="privacy-spotlight-text">
             <span class="section-tag" style="background: rgba(45,212,191,0.15); color: #2DD4BF; margin-bottom: 14px;">
-              Compromiso Legal Inquebrantable
+              Uncompromising Architectural Commitment
             </span>
-            <h2>Privacidad Real, Respaldada por Arquitectura</h2>
+            <h2>Real Privacy, Backed by Architecture</h2>
             <p>
-              La mayoría de los escáneres suben las tarjetas de tus clientes a servidores externos para entrenar
-              inteligencias artificiales o vender bases de datos. En WitnessCard, no tenemos servidores porque creemos
-              que tus contactos comerciales te pertenecen solo a ti.
+              Most card scanner apps upload your clients' business cards to cloud servers to train external AI models or build marketing databases. In WitnessCard, we have zero cloud servers because we believe your business relationships belong strictly to you.
             </p>
 
             <div class="privacy-points">
               <div class="privacy-point">
                 <div class="privacy-point-icon">✓</div>
                 <div>
-                  <h4>Sin Telemetría de Contactos</h4>
-                  <p>Ningún número de teléfono, correo o nombre extraído se envía fuera de tu teléfono.</p>
+                  <h4>Zero Contact Telemetry</h4>
+                  <p>No phone number, email address, or extracted name is ever transmitted beyond your phone.</p>
                 </div>
               </div>
               <div class="privacy-point">
                 <div class="privacy-point-icon">✓</div>
                 <div>
-                  <h4>Base de Datos Local SQLite</h4>
-                  <p>Tus tarjetas viven dentro del almacenamiento privado protegido de la aplicación.</p>
+                  <h4>Local SQLite Database</h4>
+                  <p>Your business cards reside entirely within the app's sandboxed, encrypted storage.</p>
                 </div>
               </div>
               <div class="privacy-point">
                 <div class="privacy-point-icon">✓</div>
                 <div>
-                  <h4>Permiso de Contactos Estrictamente Opcional</h4>
-                  <p>Solo se usa cuando tú decides exportar una tarjeta a la agenda nativa de Android.</p>
+                  <h4>Contacts Permission Strictly Optional</h4>
+                  <p>Only requested when you actively choose to export a card to Android's native address book.</p>
                 </div>
               </div>
             </div>
 
-            <a href="/politica-de-privacidad" class="btn btn-secondary"
+            <a href="/privacy" class="btn btn-secondary"
               style="background-color: #0F172A; border-color: #334155; color: #FFFFFF;">
-              <span>Leer la Política de Privacidad Completa (27 de octubre de 2026)</span>
+              <span>Read the Full Privacy Policy (October 27, 2026)</span>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M5 12h14M12 5l7 7-7 7" />
               </svg>
@@ -837,33 +820,33 @@
           <!-- Privacy Manifesto Card -->
           <div class="privacy-manifesto-box">
             <div class="manifesto-header">
-              <span style="font-weight: 700; color: #FFFFFF; font-size: 0.92rem;">Auditoría de Flujo de Datos</span>
+              <span style="font-weight: 700; color: #FFFFFF; font-size: 0.92rem;">Data Flow Architecture Audit</span>
               <span class="manifesto-badge">LOCAL-ONLY</span>
             </div>
 
             <div class="manifesto-item">
-              <span class="label">OCR e inferencia de texto</span>
-              <span class="state-green">✓ Local en Chip NPU</span>
+              <span class="label">OCR &amp; text recognition</span>
+              <span class="state-green">✓ Local on NPU chip</span>
             </div>
             <div class="manifesto-item">
-              <span class="label">Almacenamiento de fotos</span>
-              <span class="state-green">✓ Memoria Interna App</span>
+              <span class="label">Photo &amp; image storage</span>
+              <span class="state-green">✓ App internal sandbox</span>
             </div>
             <div class="manifesto-item">
-              <span class="label">Generación de código QR vCard</span>
-              <span class="state-green">✓ Local sin conexión</span>
+              <span class="label">vCard QR code generation</span>
+              <span class="state-green">✓ 100% offline</span>
             </div>
             <div class="manifesto-item">
-              <span class="label">Transmisión a servidores nube</span>
-              <span class="state-red">✗ 0 KB transmitidos</span>
+              <span class="label">Transmission to cloud servers</span>
+              <span class="state-red">✗ 0 KB transmitted</span>
             </div>
             <div class="manifesto-item">
-              <span class="label">Rastreadores publicitarios</span>
-              <span class="state-red">✗ 0 rastreadores</span>
+              <span class="label">Advertising trackers</span>
+              <span class="state-red">✗ 0 trackers</span>
             </div>
             <div class="manifesto-item" style="border-bottom: none;">
-              <span class="label">Venta de bases de datos a terceros</span>
-              <span class="state-red">✗ Imposible por diseño</span>
+              <span class="label">Selling databases to third parties</span>
+              <span class="state-red">✗ Impossible by design</span>
             </div>
           </div>
 
@@ -878,10 +861,10 @@
       <div class="container">
 
         <div class="section-header">
-          <span class="section-tag">Dudas Frecuentes</span>
-          <h2 class="section-title">Preguntas Frecuentes</h2>
+          <span class="section-tag">Common Inquiries</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
           <p class="section-subtitle">
-            Todo lo que necesitas saber sobre el funcionamiento técnico, precios y privacidad de WitnessCard.
+            Everything you need to know about WitnessCard's technical architecture, pricing, and privacy guarantees.
           </p>
         </div>
 
@@ -889,75 +872,61 @@
 
           <div class="faq-card open">
             <button class="faq-trigger">
-              <span>¿Cómo funciona el pago único de $39 MXN (~$2 USD) de por vida?</span>
+              <span>How does the one-time $39 MXN (~$2 USD) lifetime payment work?</span>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polyline points="6 9 12 15 18 9" />
               </svg>
             </button>
             <div class="faq-answer">
-              La compra se gestiona de forma segura a través de Google Play In-App Billing. Al realizar el pago de $39
-              pesos mexicanos (o aproximadamente $2 dólares en tu moneda local), la licencia vitalicia queda vinculada
-              permanentemente a tu cuenta de Google. No existen cargos recurrentes, mensualidades ni renovaciones. Si
-              reinstalas la app o cambias de teléfono, tu compra se restaura automáticamente.
+              The purchase is securely processed through Google Play In-App Billing. Upon completing the one-time payment of $39 Mexican Pesos (or approximately $2 USD in your local currency), the lifetime license is permanently bound to your Google Account. There are no recurring charges, renewals, or hidden fees. If you reinstall the app or upgrade your phone, your purchase restores automatically.
             </div>
           </div>
 
           <div class="faq-card">
             <button class="faq-trigger">
-              <span>¿Qué incluye el modo gratuito de 10 escaneos?</span>
+              <span>What is included in the free mode of 10 scans?</span>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polyline points="6 9 12 15 18 9" />
               </svg>
             </button>
             <div class="faq-answer">
-              El modo gratuito te permite escanear hasta 10 tarjetas de presentación físicas utilizando el motor
-              completo de Google ML Kit para verificar la velocidad y precisión de la extracción OCR en tu propio
-              teléfono. También incluye la organización en carpetas y la búsqueda global. Una vez alcanzados los 10
-              escaneos, puedes adquirir la licencia vitalicia para continuar escaneando sin límite.
+              The free mode lets you scan up to 10 physical business cards using the complete Google ML Kit engine to verify OCR accuracy and speed on your own device. It includes folder organization and instant global search. Once you reach 10 scans, you can upgrade to the lifetime license to scan unlimited cards.
             </div>
           </div>
 
           <div class="faq-card">
             <button class="faq-trigger">
-              <span>¿La app realmente funciona sin conexión a Internet?</span>
+              <span>Does the app truly function without an Internet connection?</span>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polyline points="6 9 12 15 18 9" />
               </svg>
             </button>
             <div class="faq-answer">
-              Sí, 100%. Tanto el escaneo de tarjetas, el reconocimiento de caracteres (OCR), la organización en
-              carpetas, la generación de códigos QR y la exportación de contactos funcionan perfectamente en modo avión
-              o en lugares sin cobertura de red (como sótanos de centros de convenciones o aviones).
+              Yes, 100%. Card scanning, optical character recognition (OCR), folder structuring, QR code generation, and contact exports work seamlessly in airplane mode or in venues without cell reception (such as convention center basements or flights).
             </div>
           </div>
 
           <div class="faq-card">
             <button class="faq-trigger">
-              <span>¿Cómo comparto mi tarjeta digital con alguien que no tiene la app?</span>
+              <span>How do I share my digital card with someone who does not have the app?</span>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polyline points="6 9 12 15 18 9" />
               </svg>
             </button>
             <div class="faq-answer">
-              Tu Tarjeta Digital genera un código QR con formato vCard 3.0 estándar. La otra persona solo necesita
-              apuntar la cámara de su teléfono (sea iPhone o Android) hacia tu pantalla o hacia la imagen guardada. El
-              sistema operativo detectará la tarjeta y le ofrecerá añadirte inmediatamente a su libreta de contactos
-              nativa sin necesidad de instalar ninguna aplicación adicional.
+              Your Digital Card generates an industry-standard vCard 3.0 QR code. The other person only needs to point their standard iPhone or Android camera at your screen or saved image. Their phone will instantly recognize the contact card and prompt them to add you to their address book without downloading any app.
             </div>
           </div>
 
           <div class="faq-card">
             <button class="faq-trigger">
-              <span>¿Cómo hago copias de seguridad de mis tarjetas escaneadas?</span>
+              <span>How do I create backups of my scanned business cards?</span>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polyline points="6 9 12 15 18 9" />
               </svg>
             </button>
             <div class="faq-answer">
-              En la sección de Ajustes puedes presionar "Exportar Copia de Seguridad". WitnessCard compilará tus
-              tarjetas, carpetas e imágenes en un archivo comprimido .zip local y abrirá el selector de almacenamiento
-              nativo de Android para que elijas dónde guardarlo (tu memoria interna, tarjeta SD, Google Drive o enviarlo
-              a tu computadora).
+              In the Settings section, tap "Export Backup". WitnessCard will compile your cards, folder hierarchy, and images into an offline compressed .zip file and open Android's native file picker so you can save it anywhere you prefer (internal storage, SD card, Google Drive, or transfer to your computer).
             </div>
           </div>
 
@@ -980,54 +949,53 @@
             <span>WitnessCard</span>
           </a>
           <p>
-            Herramienta de productividad profesional y escáner inteligente de tarjetas de presentación enfocado
-            prioritariamente en la privacidad del usuario. 100% On-Device.
+            Executive productivity tool and intelligent business card scanner built with an uncompromising focus on user privacy. 100% On-Device.
           </p>
           <div style="font-size: 0.8rem; color: #64748B;">
-            Desarrollado con pasión en <strong>Guanajuato, México</strong> por <strong>Beltsasar</strong>.
+            Crafted with passion in <strong>Guanajuato, Mexico</strong> by <strong>Beltsasar</strong>.
           </div>
         </div>
 
         <div class="footer-col">
-          <h4>Producto</h4>
+          <h4>Product</h4>
           <ul>
-            <li><a href="#funciones">Funciones Clave</a></li>
-            <li><a href="#tarjeta-digital">Tarjeta Digital QR</a></li>
-            <li><a href="#precios">Precios (Free & Premium)</a></li>
-            <li><a href="#faq">Preguntas Frecuentes</a></li>
+            <li><a href="#features">Key Features</a></li>
+            <li><a href="#digital-card">Digital vCard QR</a></li>
+            <li><a href="#pricing">Pricing (Free &amp; Premium)</a></li>
+            <li><a href="#faq">Frequently Asked Questions</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
-          <h4>Privacidad & Legal</h4>
+          <h4>Privacy &amp; Legal</h4>
           <ul>
-            <li><a href="/politica-de-privacidad">Política de Privacidad</a></li>
-            <li><a href="#privacidad">Arquitectura Zero-Knowledge</a></li>
-            <li><a href="/politica-de-privacidad#seccion-3">Permisos del Dispositivo</a></li>
-            <li><a href="/politica-de-privacidad#seccion-4">Google Play Billing</a></li>
+            <li><a href="/privacy">Privacy Policy</a></li>
+            <li><a href="#privacy">Zero-Knowledge Architecture</a></li>
+            <li><a href="/privacy#seccion-3">Device Permissions</a></li>
+            <li><a href="/privacy#seccion-4">Google Play Billing</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
-          <h4>Soporte & Contacto</h4>
+          <h4>Support &amp; Contact</h4>
           <ul>
-            <li><a href="mailto:soporte@witnesscard.app"
-                onclick="copySupportEmail('soporte@witnesscard.app'); return false;">soporte@witnesscard.app</a></li>
-            <li><span style="color: #64748B;">Desarrollador: Beltsasar</span></li>
-            <li><span style="color: #64748B;">Guanajuato, México</span></li>
-            <li><a href="/politica-de-privacidad#seccion-9">Datos de Contacto</a></li>
+            <li><a href="mailto:support@witnesscard.app"
+                onclick="copySupportEmail('support@witnesscard.app'); return false;">support@witnesscard.app</a></li>
+            <li><span style="color: #64748B;">Developer: Beltsasar</span></li>
+            <li><span style="color: #64748B;">Guanajuato, Mexico</span></li>
+            <li><a href="/privacy#seccion-9">Contact Information</a></li>
           </ul>
         </div>
       </div>
 
       <div class="footer-bottom">
         <div>
-          © 2026 WitnessCard. Desarrollado por Beltsasar. Todos los derechos reservados.
+          © 2026 WitnessCard. Developed by Beltsasar. All rights reserved.
         </div>
         <div style="display: flex; gap: 20px;">
-          <a href="/politica-de-privacidad">Privacidad</a>
-          <a href="#precios">Precios</a>
-          <a href="mailto:soporte@witnesscard.app">Contacto</a>
+          <a href="/privacy">Privacy</a>
+          <a href="#pricing">Pricing</a>
+          <a href="mailto:support@witnesscard.app">Contact</a>
         </div>
       </div>
 
