@@ -54,12 +54,14 @@
           <li class="nav-item"><a href="#pricing" data-i18n="nav.pricing">Pricing</a></li>
           <li class="nav-item"><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
           <li class="nav-item"><a href="/privacy" data-i18n="nav.legal">Legal</a></li>
-                    <li class="nav-mobile-lang">
+          <li class="nav-mobile-lang">
             <div class="lang-switcher" role="group" aria-label="Language selector">
-              <svg class="lang-globe-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <svg class="lang-globe-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
                 <circle cx="12" cy="12" r="10"></circle>
                 <line x1="2" y1="12" x2="22" y2="12"></line>
-                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                </path>
               </svg>
               <button type="button" class="lang-btn active" data-lang-choice="en" aria-label="English">EN</button>
               <span class="lang-divider">/</span>
@@ -67,36 +69,32 @@
             </div>
           </li>
           <li class="nav-mobile-cta">
-            <a href="#pricing" class="btn btn-primary btn-mobile-cta">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path d="M3 15v4c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2v-4M17 9l-5 5-5-5M12 12.8V2.5" />
+            <button type="button" class="btn btn-primary btn-mobile-cta" data-open-beta-modal style="width: 100%; border: none;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M3.609 1.814L13.792 12 3.61 22.186a1.5 1.5 0 0 1-.61-.956V2.77c0-.38.22-.72.609-.956zM15.207 13.414l2.586 2.586-10.74 6.2c-.417.24-.87.16-1.14-.11l9.294-8.676zM15.207 10.586L5.913 1.91c.27-.27.723-.35 1.14-.11l10.74 6.2-2.586 2.586zM16.621 12l3.35 1.934c.82.473.82 1.66 0 2.132L16.62 12z" />
               </svg>
               <span data-i18n="nav.getAppMobile">Get WitnessCard App</span>
-            </a>
+            </button>
           </li>
         </ul>
 
         <div class="nav-actions">
-                    <!-- Language Switcher (Desktop) -->
+          <!-- Language Switcher (Desktop) -->
           <div class="lang-switcher" role="group" aria-label="Language selector">
-            <svg class="lang-globe-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg class="lang-globe-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
               <circle cx="12" cy="12" r="10"></circle>
               <line x1="2" y1="12" x2="22" y2="12"></line>
-              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+              </path>
             </svg>
             <button type="button" class="lang-btn active" data-lang-choice="en" aria-label="English">EN</button>
             <span class="lang-divider">/</span>
             <button type="button" class="lang-btn" data-lang-choice="es" aria-label="Español">ES</button>
           </div>
-          <a href="#pricing" class="btn btn-primary" id="btn-nav-download">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <path d="M3 15v4c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2v-4M17 9l-5 5-5-5M12 12.8V2.5" />
-            </svg>
-            <span data-i18n="nav.getApp">Get App</span>
-          </a>
-          <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+          <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false"
+            aria-controls="navMenu">
             <span class="hamburger-bar"></span>
             <span class="hamburger-bar"></span>
             <span class="hamburger-bar"></span>
@@ -125,21 +123,23 @@
             </div>
 
             <h1 class="hero-title">
-              <span data-i18n="hero.title">The business card scanner that <span class="highlight">never sends your data</span> to the cloud.</span>
+              <span data-i18n="hero.title">The business card scanner that <span class="highlight">never sends your
+                  data</span> to the cloud.</span>
             </h1>
 
             <p class="hero-desc">
-              <span data-i18n="hero.desc">Transform physical business cards into neatly organized digital contacts in seconds. No remote servers. No forced subscriptions.</span>
+              <span data-i18n="hero.desc">Transform physical business cards into neatly organized digital contacts in
+                seconds. No remote servers. No forced subscriptions.</span>
             </p>
 
             <div class="hero-actions">
-              <a href="#pricing" class="btn btn-primary btn-lg" id="btn-hero-free">
+              <button type="button" class="btn btn-primary btn-lg" id="btn-hero-free">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                   <path
                     d="M3.609 1.814L13.792 12 3.61 22.186a1.5 1.5 0 0 1-.61-.956V2.77c0-.38.22-.72.609-.956zM15.207 13.414l2.586 2.586-10.74 6.2c-.417.24-.87.16-1.14-.11l9.294-8.676zM15.207 10.586L5.913 1.91c.27-.27.723-.35 1.14-.11l10.74 6.2-2.586 2.586zM16.621 12l3.35 1.934c.82.473.82 1.66 0 2.132L16.62 12z" />
                 </svg>
                 <span data-i18n="hero.ctaPlay">Download on Google Play</span>
-              </a>
+              </button>
 
               <a href="#features" class="btn btn-secondary btn-lg">
                 <span data-i18n="hero.ctaExplore">See How It Works</span>
@@ -211,10 +211,14 @@
                   <div class="scanner-viewfinder">
                     <div class="scan-beam"></div>
                     <div class="scan-card-target">
-                      <div style="font-size: 0.7rem; font-weight: 700; color: #FFFFFF;"><span data-i18n="sim.targetName">DR. ALEXANDER VANCE</span></div>
-                      <div style="font-size: 0.58rem; color: #94A3B8;"><span data-i18n="sim.targetRole">Clinical Cardiologist &amp; Researcher</span></div>
-                      <div style="font-size: 0.55rem; color: #2DD4BF; margin-top: 4px;"><span data-i18n="sim.targetCompany">Metropolitan Health Center</span></div>
-                      <div style="font-size: 0.52rem; color: #64748B;"><span data-i18n="sim.targetContact">alexander@cardiohealth.org • +1 415 555 0192</span></div>
+                      <div style="font-size: 0.7rem; font-weight: 700; color: #FFFFFF;"><span
+                          data-i18n="sim.targetName">DR. ALEXANDER VANCE</span></div>
+                      <div style="font-size: 0.58rem; color: #94A3B8;"><span data-i18n="sim.targetRole">Clinical
+                          Cardiologist &amp; Researcher</span></div>
+                      <div style="font-size: 0.55rem; color: #2DD4BF; margin-top: 4px;"><span
+                          data-i18n="sim.targetCompany">Metropolitan Health Center</span></div>
+                      <div style="font-size: 0.52rem; color: #64748B;"><span
+                          data-i18n="sim.targetContact">alexander@cardiohealth.org • +1 415 555 0192</span></div>
                     </div>
                   </div>
 
@@ -267,7 +271,8 @@
                       <span>📁</span>
                       <div>
                         <div data-i18n="sim.fldSuppliers">Suppliers</div>
-                        <span style="font-size: 0.6rem; color: #94A3B8;" data-i18n="sim.fldSuppliersCount">8 cards</span>
+                        <span style="font-size: 0.6rem; color: #94A3B8;" data-i18n="sim.fldSuppliersCount">8
+                          cards</span>
                       </div>
                     </div>
                   </div>
@@ -387,7 +392,8 @@
               </svg>
             </div>
             <h4 data-i18n="trust.p1Title">100% On-Device Processing</h4>
-            <p data-i18n="trust.p1Desc">OCR text extraction and semantic structuring run locally on your phone's processor.</p>
+            <p data-i18n="trust.p1Desc">OCR text extraction and semantic structuring run locally on your phone's
+              processor.</p>
           </div>
 
           <div class="trust-pillar">
@@ -400,7 +406,8 @@
               </svg>
             </div>
             <h4 data-i18n="trust.p2Title">Zero Cloud Servers</h4>
-            <p data-i18n="trust.p2Desc">We do not operate remote databases. Not a single byte of your contact information ever leaves your device.</p>
+            <p data-i18n="trust.p2Desc">We do not operate remote databases. Not a single byte of your contact
+              information ever leaves your device.</p>
           </div>
 
           <div class="trust-pillar">
@@ -411,7 +418,8 @@
               </svg>
             </div>
             <h4 data-i18n="trust.p3Title">No Accounts or Trackers</h4>
-            <p data-i18n="trust.p3Desc">No registration, sign-in, or email required to begin scanning. Just open the app and get straight to business.</p>
+            <p data-i18n="trust.p3Desc">No registration, sign-in, or email required to begin scanning. Just open the app
+              and get straight to business.</p>
           </div>
 
           <div class="trust-pillar">
@@ -427,7 +435,8 @@
               </svg>
             </div>
             <h4 data-i18n="trust.p4Title">Direct Google Play Billing</h4>
-            <p data-i18n="trust.p4Desc">In-app upgrades are processed end-to-end by Google Play. We never handle or store your financial details.</p>
+            <p data-i18n="trust.p4Desc">In-app upgrades are processed end-to-end by Google Play. We never handle or
+              store your financial details.</p>
           </div>
 
         </div>
@@ -445,7 +454,8 @@
           <span class="section-tag" data-i18n="features.tag">Executive Capabilities</span>
           <h2 class="section-title" data-i18n="features.title">Built for maximum productivity and executive privacy</h2>
           <p class="section-subtitle" data-i18n="features.subtitle">
-            Every feature in WitnessCard was designed specifically for networking conferences, executive meetings, and effortless contact management.
+            Every feature in WitnessCard was designed specifically for networking conferences, executive meetings, and
+            effortless contact management.
           </p>
         </div>
 
@@ -460,7 +470,8 @@
               </svg>
             </div>
             <h3 data-i18n="feat1.title">Intelligent OCR Scanning</h3>
-            <p data-i18n="feat1.desc">Automatic edge detection, perspective correction, and shadow removal with local OCR.</p>
+            <p data-i18n="feat1.desc">Automatic edge detection, perspective correction, and shadow removal with local
+              OCR.</p>
             <span class="feature-tag" data-i18n="feat1.tag">100% Offline</span>
           </div>
 
@@ -472,7 +483,8 @@
               </svg>
             </div>
             <h3 data-i18n="feat2.title">Folders &amp; Subfolders</h3>
-            <p data-i18n="feat2.desc">Organize contacts cleanly by company, industry, or event with hierarchical nested folders and intuitive breadcrumb navigation.</p>
+            <p data-i18n="feat2.desc">Organize contacts cleanly by company, industry, or event with hierarchical nested
+              folders and intuitive breadcrumb navigation.</p>
             <span class="feature-tag" data-i18n="feat2.tag">Total Organization</span>
           </div>
 
@@ -487,7 +499,8 @@
               </svg>
             </div>
             <h3 data-i18n="feat4.title">Digital Card with vCard QR</h3>
-            <p data-i18n="feat4.desc">Build your professional card with photo, company, title, and logo. Generates a standard vCard QR code readable by any iPhone or Android without extra apps.</p>
+            <p data-i18n="feat4.desc">Build your professional card with photo, company, title, and logo. Generates a
+              standard vCard QR code readable by any iPhone or Android without extra apps.</p>
             <span class="feature-tag" data-i18n="feat4.tag">Instant Exchange</span>
           </div>
 
@@ -500,7 +513,8 @@
               </svg>
             </div>
             <h3 data-i18n="feat3.title">Ultra-Fast Global Search</h3>
-            <p data-i18n="feat3.desc">Find any connection in milliseconds by searching names, companies, or job titles, complete with visual badges showing which folder they belong to.</p>
+            <p data-i18n="feat3.desc">Find any connection in milliseconds by searching names, companies, or job titles,
+              complete with visual badges showing which folder they belong to.</p>
             <span class="feature-tag" data-i18n="feat3.tag">List &amp; Grid Views</span>
           </div>
 
@@ -514,7 +528,8 @@
               </svg>
             </div>
             <h3 data-i18n="feat5.title">Export to Device Contacts</h3>
-            <p data-i18n="feat5.desc">Export scanned cards directly into Android's native address book or Google Contacts with a single tap, or export universal .vcf contact files.</p>
+            <p data-i18n="feat5.desc">Export scanned cards directly into Android's native address book or Google
+              Contacts with a single tap, or export universal .vcf contact files.</p>
             <span class="feature-tag" data-i18n="feat5.tag">Optional Sync</span>
           </div>
 
@@ -528,7 +543,8 @@
               </svg>
             </div>
             <h3 data-i18n="feat6.title">Local Backups &amp; Portability</h3>
-            <p data-i18n="feat6.desc">Export and import complete .zip backups using Android's secure Storage Access Framework. Switch phones without losing a single contact.</p>
+            <p data-i18n="feat6.desc">Export and import complete .zip backups using Android's secure Storage Access
+              Framework. Switch phones without losing a single contact.</p>
             <span class="feature-tag" data-i18n="feat6.tag">Sovereign Control</span>
           </div>
 
@@ -541,26 +557,30 @@
             <span class="section-tag" style="margin-bottom: 12px;" data-i18n="dcard.tag">Your Digital Signature</span>
             <h3 data-i18n="dcard.title">Your interactive digital business card with vCard QR</h3>
             <p data-i18n="dcard.desc">
-              Never run out of paper business cards at an event again. WitnessCard lets you craft your personalized executive card complete with your photo, corporate logo, and one-tap contact details.
+              Never run out of paper business cards at an event again. WitnessCard lets you craft your personalized
+              executive card complete with your photo, corporate logo, and one-tap contact details.
             </p>
             <ul class="split-checklist">
               <li>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span data-i18n="dcard.item1"><strong>Universal compatibility:</strong> Anyone can scan your QR code with their native iPhone or Android camera to instantly save your contact card.</span>
+                <span data-i18n="dcard.item1"><strong>Universal compatibility:</strong> Anyone can scan your QR code
+                  with their native iPhone or Android camera to instantly save your contact card.</span>
               </li>
               <li>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span data-i18n="dcard.item2"><strong>6 elegant visual themes:</strong> Dark Navy, Classic Light, Midnight Cyan, Royal Blue, Charcoal Black, and Emerald.</span>
+                <span data-i18n="dcard.item2"><strong>6 elegant visual themes:</strong> Dark Navy, Classic Light,
+                  Midnight Cyan, Royal Blue, Charcoal Black, and Emerald.</span>
               </li>
               <li>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span data-i18n="dcard.item3"><strong>Save image to gallery:</strong> Export a high-resolution branded QR code image to your photo library for easy sharing via WhatsApp or social media.</span>
+                <span data-i18n="dcard.item3"><strong>Save image to gallery:</strong> Export a high-resolution branded
+                  QR code image to your photo library for easy sharing via WhatsApp or social media.</span>
               </li>
             </ul>
           </div>
@@ -571,7 +591,8 @@
               <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px;">
                 <div>
                   <div style="font-size: 1.15rem; font-weight: 800;">Beltsasar</div>
-                  <div style="font-size: 0.82rem; color: #2DD4BF;" data-i18n="dcard.devRole">Software Engineer • Kotlin &amp; Android</div>
+                  <div style="font-size: 0.82rem; color: #2DD4BF;" data-i18n="dcard.devRole">Software Engineer • Kotlin
+                    &amp; Android</div>
                 </div>
                 <div
                   style="width: 44px; height: 44px; border-radius: 8px; background: rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; font-weight: 800;">
@@ -598,7 +619,8 @@
                 </div>
                 <div style="font-size: 0.8rem; line-height: 1.45;">
                   <div style="color: #F8FAFC; font-weight: 600;" data-i18n="dcard.mockTitle">Standard vCard 3.0</div>
-                  <div style="color: #94A3B8; font-size: 0.74rem;" data-i18n="dcard.mockDesc">Scanning automatically opens the native contact card on iOS and Android. Zero web intermediaries.</div>
+                  <div style="color: #94A3B8; font-size: 0.74rem;" data-i18n="dcard.mockDesc">Scanning automatically
+                    opens the native contact card on iOS and Android. Zero web intermediaries.</div>
                 </div>
               </div>
 
@@ -625,7 +647,8 @@
           <span class="section-tag" data-i18n="pricing.tag">Transparent Pricing</span>
           <h2 class="section-title" data-i18n="pricing.title">Choose how you want to use WitnessCard</h2>
           <p class="section-subtitle" data-i18n="pricing.subtitle">
-            No greedy monthly subscriptions. Try it free, and unlock unlimited lifetime access for the price of a cup of coffee.
+            No greedy monthly subscriptions. Try it free, and unlock unlimited lifetime access for the price of a cup of
+            coffee.
           </p>
         </div>
 
@@ -696,9 +719,6 @@
               </li>
             </ul>
 
-            <a href="#pricing" class="btn btn-secondary btn-lg" id="btn-pricing-free">
-              <span data-i18n="price.freeCta">Install Free Edition</span>
-            </a>
 
             <div class="pricing-guarantee">
               <span data-i18n="price.freeNote">No intrusive ads • No account required</span>
@@ -769,13 +789,7 @@
               </li>
             </ul>
 
-            <a href="#pricing" class="btn btn-blue btn-lg" id="btn-pricing-premium">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M3.609 1.814L13.792 12 3.61 22.186a1.5 1.5 0 0 1-.61-.956V2.77c0-.38.22-.72.609-.956zM15.207 13.414l2.586 2.586-10.74 6.2c-.417.24-.87.16-1.14-.11l9.294-8.676zM15.207 10.586L5.913 1.91c.27-.27.723-.35 1.14-.11l10.74 6.2-2.586 2.586zM16.621 12l3.35 1.934c.82.473.82 1.66 0 2.132L16.62 12z" />
-              </svg>
-              <span data-i18n="price.proCta">Buy on Google Play ($39 MXN / ~$2 USD)</span>
-            </a>
+
 
             <div class="pricing-guarantee">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -799,12 +813,15 @@
         <div class="privacy-spotlight-content">
 
           <div class="privacy-spotlight-text">
-            <span class="section-tag" style="background: rgba(45,212,191,0.15); color: #2DD4BF; margin-bottom: 14px;" data-i18n="privacy.spotlightBadge">
+            <span class="section-tag" style="background: rgba(45,212,191,0.15); color: #2DD4BF; margin-bottom: 14px;"
+              data-i18n="privacy.spotlightBadge">
               Uncompromising Architectural Commitment
             </span>
             <h2 data-i18n="privacy.title">Real Privacy, Backed by Architecture</h2>
             <p data-i18n="privacy.desc">
-              Most card scanner apps upload your clients' business cards to cloud servers to train external AI models or build marketing databases. In WitnessCard, we have zero cloud servers because we believe your business relationships belong strictly to you.
+              Most card scanner apps upload your clients' business cards to cloud servers to train external AI models or
+              build marketing databases. In WitnessCard, we have zero cloud servers because we believe your business
+              relationships belong strictly to you.
             </p>
 
             <div class="privacy-points">
@@ -812,21 +829,24 @@
                 <div class="privacy-point-icon">✓</div>
                 <div>
                   <h4 data-i18n="privacy.p1Title">Zero Contact Telemetry</h4>
-                  <p data-i18n="privacy.p1Desc">No phone number, email address, or extracted name is ever transmitted beyond your phone.</p>
+                  <p data-i18n="privacy.p1Desc">No phone number, email address, or extracted name is ever transmitted
+                    beyond your phone.</p>
                 </div>
               </div>
               <div class="privacy-point">
                 <div class="privacy-point-icon">✓</div>
                 <div>
                   <h4 data-i18n="privacy.p2Title">Local SQLite Database</h4>
-                  <p data-i18n="privacy.p2Desc">Your business cards reside entirely within the app's sandboxed, encrypted storage.</p>
+                  <p data-i18n="privacy.p2Desc">Your business cards reside entirely within the app's sandboxed,
+                    encrypted storage.</p>
                 </div>
               </div>
               <div class="privacy-point">
                 <div class="privacy-point-icon">✓</div>
                 <div>
                   <h4 data-i18n="privacy.p3Title">Contacts Permission Strictly Optional</h4>
-                  <p data-i18n="privacy.p3Desc">Only requested when you actively choose to export a card to Android's native address book.</p>
+                  <p data-i18n="privacy.p3Desc">Only requested when you actively choose to export a card to Android's
+                    native address book.</p>
                 </div>
               </div>
             </div>
@@ -843,7 +863,8 @@
           <!-- Privacy Manifesto Card -->
           <div class="privacy-manifesto-box">
             <div class="manifesto-header">
-              <span style="font-weight: 700; color: #FFFFFF; font-size: 0.92rem;" data-i18n="audit.title">Data Flow Architecture Audit</span>
+              <span style="font-weight: 700; color: #FFFFFF; font-size: 0.92rem;" data-i18n="audit.title">Data Flow
+                Architecture Audit</span>
               <span class="manifesto-badge">LOCAL-ONLY</span>
             </div>
 
@@ -901,7 +922,10 @@
               </svg>
             </button>
             <div class="faq-answer" data-i18n="faq.a1">
-              The purchase is securely processed through Google Play In-App Billing. Upon completing the one-time payment of $39 Mexican Pesos (or approximately $2 USD in your local currency), the lifetime license is permanently bound to your Google Account. There are no recurring charges, renewals, or hidden fees. If you reinstall the app or upgrade your phone, your purchase restores automatically.
+              The purchase is securely processed through Google Play In-App Billing. Upon completing the one-time
+              payment of $39 Mexican Pesos (or approximately $2 USD in your local currency), the lifetime license is
+              permanently bound to your Google Account. There are no recurring charges, renewals, or hidden fees. If you
+              reinstall the app or upgrade your phone, your purchase restores automatically.
             </div>
           </div>
 
@@ -913,7 +937,9 @@
               </svg>
             </button>
             <div class="faq-answer" data-i18n="faq.a2">
-              The free mode lets you scan up to 10 physical business cards to verify OCR accuracy and speed on your own device. It includes folder organization and instant global search. Once you reach 10 scans, you can upgrade to the lifetime license to scan unlimited cards.
+              The free mode lets you scan up to 10 physical business cards to verify OCR accuracy and speed on your own
+              device. It includes folder organization and instant global search. Once you reach 10 scans, you can
+              upgrade to the lifetime license to scan unlimited cards.
             </div>
           </div>
 
@@ -925,7 +951,9 @@
               </svg>
             </button>
             <div class="faq-answer" data-i18n="faq.a3">
-              Yes, 100%. Card scanning, optical character recognition (OCR), folder structuring, QR code generation, and contact exports work seamlessly in airplane mode or in venues without cell reception (such as convention center basements or flights).
+              Yes, 100%. Card scanning, optical character recognition (OCR), folder structuring, QR code generation, and
+              contact exports work seamlessly in airplane mode or in venues without cell reception (such as convention
+              center basements or flights).
             </div>
           </div>
 
@@ -937,7 +965,9 @@
               </svg>
             </button>
             <div class="faq-answer" data-i18n="faq.a4">
-              Your Digital Card generates an industry-standard vCard 3.0 QR code. The other person only needs to point their standard iPhone or Android camera at your screen or saved image. Their phone will instantly recognize the contact card and prompt them to add you to their address book without downloading any app.
+              Your Digital Card generates an industry-standard vCard 3.0 QR code. The other person only needs to point
+              their standard iPhone or Android camera at your screen or saved image. Their phone will instantly
+              recognize the contact card and prompt them to add you to their address book without downloading any app.
             </div>
           </div>
 
@@ -949,7 +979,9 @@
               </svg>
             </button>
             <div class="faq-answer" data-i18n="faq.a5">
-              In the Settings section, tap "Export Backup". WitnessCard will compile your cards, folder hierarchy, and images into an offline compressed .zip file and open Android's native file picker so you can save it anywhere you prefer (internal storage, SD card, Google Drive, or transfer to your computer).
+              In the Settings section, tap "Export Backup". WitnessCard will compile your cards, folder hierarchy, and
+              images into an offline compressed .zip file and open Android's native file picker so you can save it
+              anywhere you prefer (internal storage, SD card, Google Drive, or transfer to your computer).
             </div>
           </div>
 
@@ -972,7 +1004,8 @@
             <span>WitnessCard</span>
           </a>
           <p data-i18n="footer.desc">
-            Executive productivity tool and intelligent business card scanner built with an uncompromising focus on user privacy. 100% On-Device.
+            Executive productivity tool and intelligent business card scanner built with an uncompromising focus on user
+            privacy. 100% On-Device.
           </p>
           <div style="font-size: 0.8rem; color: #64748B;" data-i18n="footer.crafted">
             Crafted with passion by <strong>Beltsasar</strong>.
@@ -1025,6 +1058,7 @@
   </footer>
 
   <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="/js/main.js"></script>
   <script src="/js/i18n.js"></script>
 </body>

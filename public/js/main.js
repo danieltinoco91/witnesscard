@@ -188,6 +188,43 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.reinitPrivacyTocObserver = initPrivacyTocObserver;
   initPrivacyTocObserver();
+
+  // 6. Google Play Closed Testing Alert (SweetAlert)
+  function showClosedTestingAlert() {
+    const isEs = document.documentElement.lang === 'es' || (localStorage.getItem('witnesscard_lang') === 'es');
+    
+    if (typeof Swal !== 'undefined') {
+      Swal.fire({
+        title: isEs ? '¡Lo estamos preparando!' : 'We are preparing it!',
+        html: isEs 
+          ? 'La aplicación se encuentra actualmente en <b>prueba cerrada</b> en Google Play.<br><br>Estamos preparando el enlace de descarga oficial para que esté disponible muy pronto.'
+          : 'WitnessCard is currently undergoing <b>closed testing</b> on Google Play.<br><br>We are preparing the official download link and it will be available very soon.',
+        icon: 'info',
+        confirmButtonText: isEs ? 'Entendido' : 'Got it',
+        confirmButtonColor: '#0B132B'
+      });
+    } else {
+      alert(isEs 
+        ? '¡Lo estamos preparando! La app sigue en prueba cerrada en Google Play. Muy pronto estará disponible el enlace oficial.'
+        : 'We are preparing it! The app is currently in closed testing on Google Play. Official link coming soon.');
+    }
+  }
+
+  const heroDownloadBtn = document.getElementById('btn-hero-free');
+  if (heroDownloadBtn) {
+    heroDownloadBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      showClosedTestingAlert();
+    });
+  }
+
+  const mobileCtaBtn = document.querySelector('.btn-mobile-cta');
+  if (mobileCtaBtn) {
+    mobileCtaBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      showClosedTestingAlert();
+    });
+  }
 });
 
 
